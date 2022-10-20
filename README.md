@@ -1,9 +1,9 @@
-# OpenGridForum.github.io
-Public website for www.ogf.org
+# OpenGridForum-dev.github.io
+Developmental version of content for public website for www.ogf.org
 
-This website should be available as https://opengridforum.github.io
+This website should be available as https://www-dev.ogf.org
 
-To make this available as www-dev.ogf.org or www.ogf.org, we will follow the "custom domain" instructions in the instructions here: https://pages.github.com/
+To make this available as www-dev.ogf.org or www.ogf.org, we followed the "custom domain" instructions in the instructions here: https://pages.github.com/
 
 This is a sister site to https://github.com/OpenGridForum/ogf-historical-archives which is also available as https://archive.ogf.org
 
