@@ -1,4 +1,4 @@
-# OpenGridForum-dev.github.io
+# www-dev repository on github.com/opengridforum
 Developmental version of content for public website for www.ogf.org
 
 This website should be available as https://www-dev.ogf.org
