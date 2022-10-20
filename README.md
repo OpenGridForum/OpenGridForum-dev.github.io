@@ -3,7 +3,9 @@ Developmental version of content for public website for www.ogf.org
 
 This website should be available as https://www-dev.ogf.org
 
-To make this available as www-dev.ogf.org or www.ogf.org, we followed the "custom domain" instructions in the instructions here: https://pages.github.com/
+To make this available as www-dev.ogf.org, we followed the "custom domain" instructions in the instructions here: https://pages.github.com/
+
+Once the content is settled, we can change the settings or create a branch to take this site live as a replacement for https://www.ogf.org
 
 This is a sister site to https://github.com/OpenGridForum/ogf-historical-archives which is also available as https://archive.ogf.org
 
