@@ -1,23 +1,3 @@
-<div id="dokuwiki__site">
-
-<div id="dokuwiki__top" class="dokuwiki site mode_show">
-
-<div class="notify">New release available: 2020-07-29 "Hogfather". [upgrade now!](http://download.dokuwiki.org) [51.3] [(what's this?)](http://www.dokuwiki.org/update_check)</div>
-
-<div class="notify">New release candidate 3 available: 2020-06-09 "Hogfather". [upgrade now!](http://download.dokuwiki.org) [51.2] [(what's this?)](http://www.dokuwiki.org/update_check)</div>
-
-<div class="notify">New release candidate 2 available: 2020-06-01 "Hogfather". [upgrade now!](http://download.dokuwiki.org) [51.1] [(what's this?)](http://www.dokuwiki.org/update_check)</div>
-
-<div class="notify">New release candidate available: 2020-06-01 "Hogfather". [upgrade now!](http://download.dokuwiki.org) [51] [(what's this?)](http://www.dokuwiki.org/update_check)</div>
-
-<div class="notify">Hotfix release available: 2018-04-22c "Greebo". [upgrade now!](http://download.dokuwiki.org) [50.3] [(what's this?)](http://www.dokuwiki.org/update_check)</div>
-
-<div id="dokuwiki__header">
-
-<div class="pad">
-
-<div class="headings">
-
 # [**Open Grid Forum**](/ogf/doku.php/start "[H]")
 
 Open Forum | Open Standards
