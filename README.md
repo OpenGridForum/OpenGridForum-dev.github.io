@@ -2,8 +2,8 @@
 
 Open Forum | Open Standards
 
-| About | Areas and Groups | Documents | Standards | Policies | Contact |
-| ----- | ---------------- | --------- | --------- | -------- | ------- |
+| [About](/about) | [Areas and Groups](/areas_and_groups) | [Documents](/documents) | [Standards](/standards) | [Policies](/policies) | [Contact](/contact) |
+| --------------- | ------------------------------------- | ----------------------- | ----------------------- | --------------------- | --------------------------- |
 
 ## Who We Are
 
@@ -50,8 +50,9 @@ Due to the nature of OGF as an open standards and best practices documentation o
 You may unsubscribe from any individual OGF email list by following the links at the bottom of any message sent by the list. You can alternatively sign up for, or at your preference, change your email address or unsubscribe from any OGF email list by going to [https://www.ogf.org/mailman/listinfo](https://www.ogf.org/mailman/listinfo "https://www.ogf.org/mailman/listinfo") and selecting the list. Each such page includes methods to subscribe to or unsubscribe from the list, get a password reminder, or change your subscription options according to your preferences.
 
 
-** Legacy Menu Items
+## Legacy Menu Items
 
+Open Forum | Open Standards
 
 [About OGF](/ogf/doku.php/about "about")
 [Areas and Groups](/ogf/doku.php/structure/areas_and_groups "structure:areas_and_groups")  
