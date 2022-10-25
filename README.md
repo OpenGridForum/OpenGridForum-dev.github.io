@@ -1,15 +1,15 @@
-# [**Open Grid Forum**](/ogf/doku.php/start "[H]")
+# [**Open Grid Forum**](/ "[H]")
 
 Open Forum | Open Standards
 
-<span class="curid">[About OGF](/ogf/doku.php/about "about")</span>  
+[About OGF](/ogf/doku.php/about "about")
 [Areas and Groups](/ogf/doku.php/structure/areas_and_groups "structure:areas_and_groups")  
 [Documents](/ogf/doku.php/documents/documents "documents:documents")  
 [Standards](/ogf/doku.php/standards/standards "standards:standards")  
 [Events](/ogf/doku.php/events/events "events:events")  
 [Calendar](/ogf/doku.php/calendar "calendar")  
 [Membership](/ogf/doku.php/members/members "members:members")  
-<span class="curid">[Data Protection and Privacy](/ogf/doku.php/about#data_protection_and_privacy "about")</span>  
+[Data Protection and Privacy](/ogf/doku.php/about#data_protection_and_privacy "about")
 [Contact](/ogf/doku.php/contact "contact")  
 
 [Mailing Lists](http://redmine.ogf.org/tab/show/mailing-lists "http://redmine.ogf.org/tab/show/mailing-lists")  
@@ -37,8 +37,6 @@ Open Forum | Open Standards
 
 ## Who We Are
 
-<div class="level2">
-
 The Open Grid Forum (OGF) is a community of users, developers, and vendors leading the global standardization effort for distributed computing (including clusters, grids and clouds). The OGF community consists of thousands of individuals in industry and research, representing over 400 organizations in more than 50 countries. Together we work to accelerate adoption of grid computing worldwide because we believe grids will lead to new discoveries, new opportunities, and better business practices.
 
 The work of OGF is carried out through community-initiated working groups, which develop standards and specifications in cooperation with other leading standards organizations, software vendors, and users. OGF is funded through its Organizational Members, including technology companies and academic and government research institutions. OGF hosts several events each year to further develop grid-related specifications and use cases and to share best practices.
@@ -46,7 +44,6 @@ The work of OGF is carried out through community-initiated working groups, which
 For an overview of OGF's approach to its work, please see the summary of [OGF Documents and Standards](/ogf/doku.php/standards/standards "standards:standards"), or [view this video](https://youtu.be/tP24wwORFkY "https://youtu.be/tP24wwORFkY") of an overview presentation given at the US National Institute of Standards and Technology (NIST) Cloud Computing Forum and Workshop VIII by OGF's current President, Alan Sill.
 
 You can find out more about [the OGF Vision](/ogf/doku.php/about/mission "about:mission"), [OGF Liaisons](/ogf/doku.php/about/liaisons "about:liaisons"), our approach to [Delivering Value](/ogf/doku.php/about/introduction "about:introduction"), the OGF [Board of Directors](/ogf/doku.php/about/ogf_board "about:ogf_board"), [Officers](/ogf/doku.php/about/operations "about:operations"), [Grid Forum Steering Group (GFSG)](/ogf/doku.php/about/steering_group "about:steering_group"), [Advisory Committee (ADCOM)](/ogf/doku.php/about/advisory_committee "about:advisory_committee"), [Nominations Committee](/ogf/doku.php/about/nomcom "about:nomcom"), [Intellectual Property Statement](/ogf/doku.php/about/copyright "about:copyright"), or [further background](/ogf/doku.php/about/organization "about:organization") using the links in this sentence or at the lower-left navigation menu on any of the <span class="curid">[About](/ogf/doku.php/about "about")</span> pages on this site.
-
 
 ## The OGF Mission
 
