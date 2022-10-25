@@ -2,38 +2,8 @@
 
 Open Forum | Open Standards
 
-[About OGF](/ogf/doku.php/about "about")
-[Areas and Groups](/ogf/doku.php/structure/areas_and_groups "structure:areas_and_groups")  
-[Documents](/ogf/doku.php/documents/documents "documents:documents")  
-[Standards](/ogf/doku.php/standards/standards "standards:standards")  
-[Events](/ogf/doku.php/events/events "events:events")  
-[Calendar](/ogf/doku.php/calendar "calendar")  
-[Membership](/ogf/doku.php/members/members "members:members")  
-[Data Protection and Privacy](/ogf/doku.php/about#data_protection_and_privacy "about")
-[Contact](/ogf/doku.php/contact "contact")  
-
-[Mailing Lists](http://redmine.ogf.org/tab/show/mailing-lists "http://redmine.ogf.org/tab/show/mailing-lists")  
-[GitHub](https://github.com/OpenGridForum "https://github.com/OpenGridForum")  
-[Redmine](http://redmine.ogf.org/ "http://redmine.ogf.org/")  
-
-![](/ogf/lib/exe/fetch.php/128x128-green1.png)
-
-**Overview**  
-[Introduction](/ogf/doku.php/about/introduction "about:introduction")  
-[Vision](/ogf/doku.php/about/mission "about:mission")  
-[Organization](/ogf/doku.php/about/organization "about:organization")  
-[Liaisons](/ogf/doku.php/about/liaisons "about:liaisons")
-
-**Structure**  
-[OGF Board](/ogf/doku.php/about/ogf_board "about:ogf_board")  
-[Operations](/ogf/doku.php/about/operations "about:operations")  
-[Steering Group](/ogf/doku.php/about/steering_group "about:steering_group")  
-[Advisory Committee](/ogf/doku.php/about/advisory_committee "about:advisory_committee")  
-[NomCom](/ogf/doku.php/about/nomcom "about:nomcom")
-
-**Policies**  
-[Copyright](/ogf/doku.php/about/copyright "about:copyright")  
-[IPR](/ogf/doku.php/about/ipr "about:ipr")
+| About | Areas and Groups | Documents | Standards | Policies | Contact |
+| ----- | ---------------- | --------- | --------- | -------- | ------- |
 
 ## Who We Are
 
@@ -78,3 +48,42 @@ To comply with requirements introduced by the European GDPR and State of Califor
 Due to the nature of OGF as an open standards and best practices documentation organization, your participation explicitly grants OGF the right to retain certain identifying information, including signatures on the IPR policy agreements necessary for the organization to operate in an open public way. OGF reserves the right to retain this information to comply with legal requirements associated with its document development and assembly process. You do have the right to request access to the information that OGF holds for you, which consists of your membership in our email lists and the permissions granted to OGF by you in past meetings.
 
 You may unsubscribe from any individual OGF email list by following the links at the bottom of any message sent by the list. You can alternatively sign up for, or at your preference, change your email address or unsubscribe from any OGF email list by going to [https://www.ogf.org/mailman/listinfo](https://www.ogf.org/mailman/listinfo "https://www.ogf.org/mailman/listinfo") and selecting the list. Each such page includes methods to subscribe to or unsubscribe from the list, get a password reminder, or change your subscription options according to your preferences.
+
+
+** Legacy Menu Items
+
+
+[About OGF](/ogf/doku.php/about "about")
+[Areas and Groups](/ogf/doku.php/structure/areas_and_groups "structure:areas_and_groups")  
+[Documents](/ogf/doku.php/documents/documents "documents:documents")  
+[Standards](/ogf/doku.php/standards/standards "standards:standards")  
+[Events](/ogf/doku.php/events/events "events:events")  
+[Calendar](/ogf/doku.php/calendar "calendar")  
+[Membership](/ogf/doku.php/members/members "members:members")  
+[Data Protection and Privacy](/ogf/doku.php/about#data_protection_and_privacy "about")
+[Contact](/ogf/doku.php/contact "contact")  
+
+[Mailing Lists](http://redmine.ogf.org/tab/show/mailing-lists "http://redmine.ogf.org/tab/show/mailing-lists")  
+[GitHub](https://github.com/OpenGridForum "https://github.com/OpenGridForum")  
+[Redmine](http://redmine.ogf.org/ "http://redmine.ogf.org/")  
+
+![](/ogf/lib/exe/fetch.php/128x128-green1.png)
+
+
+
+**Overview**  
+[Introduction](/ogf/doku.php/about/introduction "about:introduction")  
+[Vision](/ogf/doku.php/about/mission "about:mission")  
+[Organization](/ogf/doku.php/about/organization "about:organization")  
+[Liaisons](/ogf/doku.php/about/liaisons "about:liaisons")
+
+**Structure**  
+[OGF Board](/ogf/doku.php/about/ogf_board "about:ogf_board")  
+[Operations](/ogf/doku.php/about/operations "about:operations")  
+[Steering Group](/ogf/doku.php/about/steering_group "about:steering_group")  
+[Advisory Committee](/ogf/doku.php/about/advisory_committee "about:advisory_committee")  
+[NomCom](/ogf/doku.php/about/nomcom "about:nomcom")
+
+**Policies**  
+[Copyright](/ogf/doku.php/about/copyright "about:copyright")  
+[IPR](/ogf/doku.php/about/ipr "about:ipr")
