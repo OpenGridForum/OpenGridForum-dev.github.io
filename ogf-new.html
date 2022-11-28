@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+        />
+        <style>
+            body.dragging * {
+                cursor: grabbing !important;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            *:focus,
+            *:hover {
+                outline: none;
+            }
+            .gitbook-splashscreen {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                display: flex;
+                width: 100%;
+                height: 100%;
+            }
+            .slate-spacer {
+                height: 0;
+                color: transparent;
+                outline: none;
+                position: absolute;
+            }
+            @keyframes LoadingIndicator {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            [data-loading-indicator='true'] {
+                animation: LoadingIndicator 0.6s ease infinite;
+            }
+        </style>
+        <title>OGF Documents and Work Spaces - OGF Documents and Work Spaces</title>
+<meta name="description" content="Overview of the Open Grid Forum document collection; how to use OGF's document preparation templates and spaces, and their relation to the OGF public process for document development." id="__meta-description" />
+<link rel="preload" as="font" type="font/woff2" href="https://app.gitbook.com/public/fonts/Roboto/Roboto-Bold.woff2?v=3.19 <view-source:https://app.gitbook.com/public/fonts/Roboto/Roboto-Bold.woff2?v=3.19>" crossorigin="anonymous">
+<link rel="preload" as="font" type="font/woff2" href="https://app.gitbook.com/public/fonts/Roboto/Roboto-BoldItalic.woff2?v=3.19 <view-source:https://app.gitbook.com/public/fonts/Roboto/Roboto-BoldItalic.woff2?v=3.19>" crossorigin="anonymous">
+<link rel="preload" as="font" type="font/woff2" href="https://app.gitbook.com/public/fonts/Roboto/Roboto-Black.woff2?v=3.19 <view-source:https://app.gitbook.com/public/fonts/Roboto/Roboto-Black.woff2?v=3.19>" crossorigin="anonymous">
+<link rel="preload" as="font" type="font/woff2" href="https://app.gitbook.com/public/fonts/Roboto/Roboto-BlackItalic.woff2?v=3.19 <view-source:https://app.gitbook.com/public/fonts/Roboto/Roboto-BlackItalic.woff2?v=3.19>" crossorigin="anonymous">
+<link rel="preload" as="font" type="font/woff2" href="https://app.gitbook.com/public/fonts/Roboto/Roboto-Medium.woff2?v=3.19 <view-source:https://app.gitbook.com/public/fonts/Roboto/Roboto-Medium.woff2?v=3.19>" crossorigin="anonymous">
+<link rel="preload" as="font" type="font/woff2" href="https://app.gitbook.com/public/fonts/Roboto/Roboto-MediumItalic.woff2?v=3.19 <view-source:https://app.gitbook.com/public/fonts/Roboto/Roboto-MediumItalic.woff2?v=3.19>" crossorigin="anonymous">
+<link rel="preload" as="font" type="font/woff2" href="https://app.gitbook.com/public/fonts/Roboto/Roboto-Regular.woff2?v=3.19 <view-source:https://app.gitbook.com/public/fonts/Roboto/Roboto-Regular.woff2?v=3.19>" crossorigin="anonymous">
+<link rel="preload" as="font" type="font/woff2" href="https://app.gitbook.com/public/fonts/Roboto/Roboto-Italic.woff2?v=3.19 <view-source:https://app.gitbook.com/public/fonts/Roboto/Roboto-Italic.woff2?v=3.19>" crossorigin="anonymous">
+        <style id="__font-Roboto-gitbook-content-font">
+            @font-face {
+            font-family: 'gitbook-content-font';
+            font-style:  normal;
+            font-weight: 700;
+            font-display: swap;
+            src: local("Roboto Bold"), local("Roboto-Bold"), url("https://app.gitbook.com/public/fonts/Roboto/Roboto-Bold.woff2?v=3.19") format("woff2"),
+                    url("https://app.gitbook.com/public/fonts/Roboto/Roboto-Bold.woff?v=3.19") format("woff");
+        }
+@font-face {
+            font-family: 'gitbook-content-font';
+            font-style:  italic;
+            font-weight: 700;
+            font-display: swap;
+            src: local("Roboto BoldItalic"), local("Roboto-BoldItalic"), url("https://app.gitbook.com/public/fonts/Roboto/Roboto-BoldItalic.woff2?v=3.19") format("woff2"),
+                    url("https://app.gitbook.com/public/fonts/Roboto/Roboto-BoldItalic.woff?v=3.19") format("woff");
+        }
+@font-face {
+            font-family: 'gitbook-content-font';
+            font-style:  normal;
+            font-weight: 800;
+            font-display: swap;
+            src: local("Roboto Black"), local("Roboto-Black"), url("https://app.gitbook.com/public/fonts/Roboto/Roboto-Black.woff2?v=3.19") format("woff2"),
+                    url("https://app.gitbook.com/public/fonts/Roboto/Roboto-Black.woff?v=3.19") format("woff");
+        }
+@font-face {
+            font-family: 'gitbook-content-font';
+            font-style:  italic;
+            font-weight: 800;
+            font-display: swap;
+            src: local("Roboto BlackItalic"), local("Roboto-BlackItalic"), url("https://app.gitbook.com/public/fonts/Roboto/Roboto-BlackItalic.woff2?v=3.19") format("woff2"),
+                    url("https://app.gitbook.com/public/fonts/Roboto/Roboto-BlackItalic.woff?v=3.19") format("woff");
+        }
+@font-face {
+            font-family: 'gitbook-content-font';
+            font-style:  normal;
+            font-weight: 500;
+            font-display: swap;
+            src: local("Roboto Medium"), local("Roboto-Medium"), url("https://app.gitbook.com/public/fonts/Roboto/Roboto-Medium.woff2?v=3.19") format("woff2"),
+                    url("https://app.gitbook.com/public/fonts/Roboto/Roboto-Medium.woff?v=3.19") format("woff");
+        }
+@font-face {
+            font-family: 'gitbook-content-font';
+            font-style:  italic;
+            font-weight: 500;
+            font-display: swap;
+            src: local("Roboto MediumItalic"), local("Roboto-MediumItalic"), url("https://app.gitbook.com/public/fonts/Roboto/Roboto-MediumItalic.woff2?v=3.19") format("woff2"),
+                    url("https://app.gitbook.com/public/fonts/Roboto/Roboto-MediumItalic.woff?v=3.19") format("woff");
+        }
+@font-face {
+            font-family: 'gitbook-content-font';
+            font-style:  normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local("Roboto Regular"), local("Roboto-Regular"), url("https://app.gitbook.com/public/fonts/Roboto/Roboto-Regular.woff2?v=3.19") format("woff2"),
+                    url("https://app.gitbook.com/public/fonts/Roboto/Roboto-Regular.woff?v=3.19") format("woff");
+        }
+@font-face {
+            font-family: 'gitbook-content-font';
+            font-style:  italic;
+            font-weight: 400;
+            font-display: swap;
+            src: local("Roboto Italic"), local("Roboto-Italic"), url("https://app.gitbook.com/public/fonts/Roboto/Roboto-Italic.woff2?v=3.19") format("woff2"),
+                    url("https://app.gitbook.com/public/fonts/Roboto/Roboto-Italic.woff?v=3.19") format("woff");
+        }
+        </style>
+<meta name="og:description" content="Overview of the Open Grid Forum document collection; how to use OGF's document preparation templates and spaces, and their relation to the OGF public process for document development." id="__meta-og:description" />
+<meta name="og:image" content="https://app.gitbook.com/share/space/thumbnail/-MHb4RS7n34_GZqU-Sl7.png?color=%2303D1EB&logo=https%3A%2F%2F1247983563-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fspaces%252F-MHb4RS7n34_GZqU-Sl7%252Favatar-rectangle-1600542090835.png%3Fgeneration%3D1600542091015719%26alt%3Dmedia&theme=light" id="__meta-og:image" />
+<meta name="twitter:card" content="summary_large_image" id="__meta-twitter:card" />
+<meta name="og:title" content="OGF Documents and Work Spaces" id="__meta-og:title" />
+<meta name="twitter:site" content="OGF Documents and Work Spaces" id="__meta-twitter:site" />
+<meta name="robots" content="index" id="__meta-robots" />
+<link rel="icon" href="https://app.gitbook.com/public/emojis/1f4c1.png?v=6.0.0 <view-source:https://app.gitbook.com/public/emojis/1f4c1.png?v=6.0.0>"  id="__link-icon" />
+
+                
+                <script type="module" defer src="https://app.gitbook.com/public/app/public-QWBHHP53.min.js?v=10.9.204-39fd6601f9cab49c506480444c81be3e8262a1b3-3540226880 <view-source:https://app.gitbook.com/public/app/public-QWBHHP53.min.js?v=10.9.204-39fd6601f9cab49c506480444c81be3e8262a1b3-3540226880>"></script>
+                <style id="react-native-stylesheet">[stylesheet-group="0"]{}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+body{margin:0;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+input::-webkit-search-cancel-button,input::-webkit-search-decoration,input::-webkit-search-results-button,input::-webkit-search-results-decoration{display:none;}
+[stylesheet-group="0.1"]{}
+:focus:not([data-focusvisible-polyfill]){outline: none;}
+[stylesheet-group="0.5"]{}
+.css-18t94o4{cursor:pointer;}
+.css-4rbku5{background-color:rgba(0,0,0,0.00);color:inherit;font:inherit;list-style:none;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;text-align:inherit;text-decoration:none;}
+[stylesheet-group="1"]{}
+.css-1dbjc4n{-ms-flex-align:stretch;-ms-flex-direction:column;-ms-flex-negative:0;-ms-flex-preferred-size:auto;-webkit-align-items:stretch;-webkit-box-align:stretch;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-basis:auto;-webkit-flex-direction:column;-webkit-flex-shrink:0;align-items:stretch;border:0 solid black;box-sizing:border-box;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;flex-basis:auto;flex-direction:column;flex-shrink:0;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;min-height:0px;min-width:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;position:relative;z-index:0;}
+.css-901oao{border:0 solid black;box-sizing:border-box;color:rgba(0,0,0,1.00);display:inline;font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;white-space:pre-wrap;word-wrap:break-word;}
+.css-vcwn7f{max-width:100%;overflow-x:hidden;overflow-y:hidden;text-overflow:ellipsis;white-space:pre;}
+.css-16my406{color:inherit;font:inherit;white-space:inherit;}
+.css-cens5h{-webkit-box-orient:vertical;display:-webkit-box;max-width:100%;overflow-x:hidden;overflow-y:hidden;text-overflow:ellipsis;}
+[stylesheet-group="2"]{}
+.r-13awgt0{-ms-flex:1 1 0%;-webkit-flex:1;flex:1;}
+.r-1xc7w19{border-bottom-color:rgba(0,0,0,1.00);border-left-color:rgba(0,0,0,1.00);border-right-color:rgba(0,0,0,1.00);border-top-color:rgba(0,0,0,1.00);}
+.r-1phboty{border-bottom-style:solid;border-left-style:solid;border-right-style:solid;border-top-style:solid;}
+.r-1yadl64{border-bottom-width:0px;border-left-width:0px;border-right-width:0px;border-top-width:0px;}
+.r-6koalj{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;}
+.r-crgep1{margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;}
+.r-t60dpp{padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;}
+.r-42olwf{border-bottom-color:rgba(0,0,0,0.00);border-left-color:rgba(0,0,0,0.00);border-right-color:rgba(0,0,0,0.00);border-top-color:rgba(0,0,0,0.00);}
+.r-rs99b7{border-bottom-width:1px;border-left-width:1px;border-right-width:1px;border-top-width:1px;}
+.r-z2wwpe{border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-top-left-radius:4px;border-top-right-radius:4px;}
+.r-18c69zk{border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px;}
+.r-kdyh1x{border-bottom-left-radius:6px;border-bottom-right-radius:6px;border-top-left-radius:6px;border-top-right-radius:6px;}
+.r-nsbfu8{padding-bottom:16px;padding-left:16px;padding-right:16px;padding-top:16px;}
+.r-1xfd6ze{border-bottom-left-radius:8px;border-bottom-right-radius:8px;border-top-left-radius:8px;border-top-right-radius:8px;}
+.r-xoduu5{display:-webkit-inline-box;display:-moz-inline-box;display:-ms-inline-flexbox;display:-webkit-inline-flex;display:inline-flex;}
+.r-1471scf{display:inline;}
+.r-190qawg{border-bottom-color:rgba(227,232,237,1.00);border-left-color:rgba(227,232,237,1.00);border-right-color:rgba(227,232,237,1.00);border-top-color:rgba(227,232,237,1.00);}
+.r-1udh08x{overflow-x:hidden;overflow-y:hidden;}
+[stylesheet-group="2.1"]{}
+.r-1jgb5lz{margin-left:auto;margin-right:auto;}
+.r-1pn2ns4{padding-left:8px;padding-right:8px;}
+.r-ymttw5{padding-left:16px;padding-right:16px;}
+.r-mk0yit{padding-left:0px;padding-right:0px;}
+.r-s1qlax{padding-left:4px;padding-right:4px;}
+.r-1e081e0{padding-left:12px;padding-right:12px;}
+.r-1yzf0co{padding-bottom:16px;padding-top:16px;}
+.r-5njf8e{padding-bottom:8px;padding-top:8px;}
+.r-pw2am6{margin-bottom:24px;margin-top:24px;}
+.r-1guathk{padding-left:24px;padding-right:24px;}
+.r-oyd9sg{padding-bottom:4px;padding-top:4px;}
+[stylesheet-group="2.2"]{}
+.r-12vffkv>*{pointer-events:auto;}
+.r-12vffkv{pointer-events:none!important;}
+.r-1oszu61{-ms-flex-align:stretch;-webkit-align-items:stretch;-webkit-box-align:stretch;align-items:stretch;}
+.r-deolkf{box-sizing:border-box;}
+.r-1mlwlqe{-ms-flex-preferred-size:auto;-webkit-flex-basis:auto;flex-basis:auto;}
+.r-eqz5dr{-ms-flex-direction:column;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;flex-direction:column;}
+.r-1q142lx{-ms-flex-negative:0;-webkit-flex-shrink:0;flex-shrink:0;}
+.r-ifefl9{min-height:0px;}
+.r-bcqeeo{min-width:0px;}
+.r-bnwqim{position:relative;}
+.r-417010{z-index:0;}
+.r-14lw9ot{background-color:rgba(255,255,255,1.00);}
+.r-nzcix3{border-bottom-color:rgba(227,232,237,1.00);}
+.r-qklmqi{border-bottom-width:1px;}
+.r-gtdqiz{position:-webkit-sticky;position:sticky;}
+.r-ipm5af{top:0px;}
+.r-184en5c{z-index:1;}
+.r-18u37iz{-ms-flex-direction:row;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;flex-direction:row;}
+.r-1awozwy{-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;align-items:center;}
+.r-ty80ws{max-width:1510px;}
+.r-13qz1uu{width:100%;}
+.r-eafdt9{-webkit-transition-duration:0.15s;transition-duration:0.15s;}
+.r-1i6wzkk{-moz-transition-property:opacity;-webkit-transition-property:opacity;transition-property:opacity;}
+.r-lrvibr{-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;user-select:none;}
+.r-1loqt21{cursor:pointer;}
+.r-1otgn73{-ms-touch-action:manipulation;touch-action:manipulation;}
+.r-18kxxzh{-ms-flex-positive:0;-webkit-box-flex:0;-webkit-flex-grow:0;flex-grow:0;}
+.r-1777fci{-ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;}
+.r-1ny4l3l{outline-style:none;}
+.r-eu3ka{height:40px;}
+.r-1bnj018{color:rgba(92,105,117,1.00);}
+.r-1kb76zh{margin-right:8px;}
+.r-1aockid{width:40px;}
+.r-h7gdob{color:currentColor;}
+.r-17s6mgv{-ms-flex-pack:end;-webkit-box-pack:end;-webkit-justify-content:flex-end;justify-content:flex-end;}
+.r-1ro0kt6{-ms-flex-preferred-size:0%;-webkit-flex-basis:0%;flex-basis:0%;}
+.r-16y2uox{-ms-flex-positive:1;-webkit-box-flex:1;-webkit-flex-grow:1;flex-grow:1;}
+.r-1wbh5a2{-ms-flex-negative:1;-webkit-flex-shrink:1;flex-shrink:1;}
+.r-1qhn6m8{padding-left:16px;}
+.r-1jj8364{margin-left:auto;}
+.r-puj83k{padding-left:24px;}
+.r-1pyaxff{padding-right:8px;}
+.r-16vg0q1{max-width:225px;}
+.r-1wtj0ep{-ms-flex-pack:justify;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}
+.r-gg6oyi{font-family:gitbook-content-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;}
+.r-1b43r93{font-size:14px;}
+.r-16dba41{font-weight:400;}
+.r-hbpseb{line-height:22px;}
+.r-1472mwg{height:24px;}
+.r-7xmw5f{width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;}
+.r-1enofrn{font-size:12px;}
+.r-1kfrs79{font-weight:600;}
+.r-19r33im{letter-spacing:1.2px;}
+.r-14yzgew{line-height:18px;}
+.r-tsynxw{text-transform:uppercase;}
+.r-gb5jj{color:rgba(3,209,235,1.00);}
+.r-mabqd8{height:32px;}
+.r-1yvhtrz{width:32px;}
+.r-1pl7oy7{min-height:48px;}
+.r-1d9grui{border-bottom-color:rgba(211,220,228,1.00);}
+.r-lchren{margin-right:auto;}
+.r-1jkjb{margin-left:8px;}
+.r-11wrixw{margin-left:0px;}
+.r-ubezar{font-size:16px;}
+.r-135wba7{line-height:24px;}
+.r-homxoj{color:inherit;}
+.r-k200y{-ms-flex-item-align:start;-webkit-align-self:flex-start;align-self:flex-start;}
+.r-18ayb63{border-right-color:rgba(227,232,237,1.00);}
+.r-13l2t4g{border-right-width:1px;}
+.r-12dqhl9{height:calc(100vh - 80px);}
+.r-1rnoaur{overflow-y:auto;}
+.r-1fo40xd{top:80px;}
+.r-1ipicw7{width:300px;}
+.r-sga3zk{height:64px;}
+.r-1kihuf0{-ms-flex-item-align:center;-ms-grid-row-align:center;-webkit-align-self:center;align-self:center;}
+.r-150rngu{-webkit-overflow-scrolling:touch;}
+.r-11yh6sk{overflow-x:hidden;}
+.r-1sncvnh{-webkit-transform:translateZ(0px);transform:translateZ(0px);}
+.r-1sc18lr{padding-bottom:88px;}
+.r-1p0dtai{bottom:0px;}
+.r-u8s1d{position:absolute;}
+.r-10ptun7{height:16px;}
+.r-1l7z4oj{padding-bottom:16px;}
+.r-1b00too{background-color:rgba(236,239,241,1.00);}
+.r-1rasi3h{color:rgba(136,153,168,1.00);}
+.r-b88u0q{font-weight:700;}
+.r-1l5ssaz{max-width:910px;}
+.r-1ygmrgt{padding-top:24px;}
+.r-1peese0{margin-bottom:24px;}
+.r-1xnzce8{-moz-user-select:-webkit-text;-moz-user-select:text;-ms-user-select:-webkit-text;-ms-user-select:text;-webkit-user-select:-webkit-text;-webkit-user-select:text;user-select:-webkit-text;user-select:text;}
+.r-1nf4jbm{color:rgba(59,69,78,1.00);}
+.r-1wzrnnt{margin-top:16px;}
+.r-adyw6z{font-size:20px;}
+.r-17rnw9f{line-height:30px;}
+.r-xd6kpl{padding-bottom:8px;}
+.r-obd0qt{-ms-flex-align:end;-webkit-align-items:flex-end;-webkit-box-align:end;align-items:flex-end;}
+.r-fdjqy7{text-align:left;}
+.r-orgf3d{opacity:0;}
+.r-tskmnb{padding-top:8px;}
+.r-11c0sde{margin-top:24px;}
+.r-1yv4afn{border-top-color:rgba(227,232,237,1.00);}
+.r-5kkj8d{border-top-width:1px;}
+.r-icyqz7{max-height:calc(100vh - 88px);}
+.r-1mkpi1y{max-width:max(50%, 300px);}
+.r-hu79xy{min-width:196px;}
+.r-wk8lta{padding-top:0px;}
+.r-1mdbw0j{padding-bottom:0px;}
+.r-dnmrzs{max-width:100%;}
+.r-6wscbn{max-width:252px;}
+.r-1ceczpf{min-height:24px;}
+.r-15zivkp{margin-bottom:4px;}
+.r-1clhhh9{-moz-transition-property:all;-webkit-transition-property:all;transition-property:all;}
+.r-majxgm{font-weight:500;}
+.r-1ow6zhx{margin-left:16px;}
+.r-1niwhzg{background-color:rgba(0,0,0,0.00);}
+.r-vvn4in{background-position:center;}
+.r-u6sd8q{background-repeat:no-repeat;}
+.r-4gszlv{background-size:cover;}
+.r-1pi2tsx{height:100%;}
+.r-1d2f490{left:0px;}
+.r-zchlnj{right:0px;}
+.r-1wyyakw{z-index:-1;}
+.r-ehq7j7{background-size:contain;}
+[stylesheet-group="10"]{}
+[data-rnw-media-class="4605__4606"]{ height:80px;}
+@media (max-width: 700px) and (max-width: 9999999.52544853959552544854px) { [data-rnw-media-class="4605__4606"] { height:64px;} }
+[data-rnw-media-class="visible__hidden"]{display: none;}
+@media (max-width: 700px) and (max-width: 9999999.118105115105981081019595104105100100101110px) { [data-rnw-media-class="visible__hidden"] {display: flex;} }
+@media (max-width: 700px) and (max-width: 9999999.1041051001001011109595px) { [data-rnw-media-class="hidden__"] {display: none;} }
+[data-rnw-media-class="hidden__visible"]{display: flex;}
+@media (max-width: 700px) and (max-width: 9999999.104105100100101110959511810511510598108101px) { [data-rnw-media-class="hidden__visible"] {display: none;} }
+[data-rnw-media-class="188__187"]{ -ms-flex-direction:row;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;flex-direction:row;}
+@media (max-width: 700px) and (max-width: 9999999.4956569595495655px) { [data-rnw-media-class="188__187"] { -ms-flex-direction:column;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;flex-direction:column;} }
+[data-rnw-media-class="hidden__visible_b1430-visible"]{display: flex;}
+@media (max-width: 1430px) and (max-width: 9999999.1041051001001011109595118105115105981081019598495251484511810511510598108101px) { [data-rnw-media-class="hidden__visible_b1430-visible"] {display: flex;} }
+@media (max-width: 700px) and (max-width: 9999999.1041051001001011109595118105115105981081019598495251484511810511510598108101px) { [data-rnw-media-class="hidden__visible_b1430-visible"] {display: none;} }
+[data-rnw-media-class="4343__4342_b1430-196"]{ padding-right:80px;}
+@media (max-width: 1430px) and (max-width: 9999999.5251525195955251525095984952514845495754px) { [data-rnw-media-class="4343__4342_b1430-196"] { -ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;} }
+@media (max-width: 700px) and (max-width: 9999999.5251525195955251525095984952514845495754px) { [data-rnw-media-class="4343__4342_b1430-196"] { padding-right:16px;} }
+[data-rnw-media-class="4306__4307"]{ height:48px;width:80px;}
+@media (max-width: 700px) and (max-width: 9999999.52514854959552514855px) { [data-rnw-media-class="4306__4307"] { height:40px;min-width:16px;width:auto;} }
+[data-rnw-media-class="236__235"]{ font-family:gitbook-content-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:40px;font-weight:700;line-height:48px;}
+@media (max-width: 700px) and (max-width: 9999999.5051549595505153px) { [data-rnw-media-class="236__235"] { font-family:gitbook-content-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:32px;font-weight:700;line-height:40px;} }
+[data-rnw-media-class="visible__hidden_b1430-visible"]{display: none;}
+@media (max-width: 1430px) and (max-width: 9999999.1181051151059810810195951041051001001011109598495251484511810511510598108101px) { [data-rnw-media-class="visible__hidden_b1430-visible"] {display: flex;} }
+@media (max-width: 700px) and (max-width: 9999999.1181051151059810810195951041051001001011109598495251484511810511510598108101px) { [data-rnw-media-class="visible__hidden_b1430-visible"] {display: flex;} }
+[data-rnw-media-class="4309__4308"]{ margin-left:80px;}
+@media (max-width: 700px) and (max-width: 9999999.52514857959552514856px) { [data-rnw-media-class="4309__4308"] { margin-left:16px;} }
+[data-rnw-media-class="__127"]{ padding-bottom:40px;}
+[data-rnw-media-class="4220-196__4218-_b1430-196"]{ padding-right:80px;}
+@media (max-width: 1430px) and (max-width: 9999999.52505048454957549595525049564595984952514845495754px) { [data-rnw-media-class="4220-196__4218-_b1430-196"] { -ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;} }
+@media (max-width: 700px) and (max-width: 9999999.52505048454957549595525049564595984952514845495754px) { [data-rnw-media-class="4220-196__4218-_b1430-196"] { -ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;padding-right:16px;} }
+[data-rnw-media-class="4219-__4217"]{ margin-left:80px;}
+@media (max-width: 700px) and (max-width: 9999999.5250495745959552504955px) { [data-rnw-media-class="4219-__4217"] { margin-left:16px;} }
+[data-rnw-media-class="212__211"]{ font-family:gitbook-content-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:24px;font-weight:700;line-height:32px;}
+@media (max-width: 700px) and (max-width: 9999999.5049509595504949px) { [data-rnw-media-class="212__211"] { font-family:gitbook-content-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:24px;} }
+[data-rnw-media-class="4346__4345"]{ margin-left:80px;}
+@media (max-width: 700px) and (max-width: 9999999.52515254959552515253px) { [data-rnw-media-class="4346__4345"] { margin-left:16px;} }
+[data-rnw-media-class="_188_187"]{ -ms-flex-direction:row;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;flex-direction:row;}
+@media (max-width: 1024px) and (max-width: 9999999.9549565695495655px) { [data-rnw-media-class="_188_187"] { -ms-flex-direction:column;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;flex-direction:column;} }
+@media (max-width: 1024px) and (max-width: 9999999.9549545095px) { [data-rnw-media-class="_162_"] { margin-bottom:16px;} }
+[data-rnw-media-class="_visible_visible"]{display: flex;}
+@media (max-width: 1024px) and (max-width: 9999999.95118105115105981081019511810511510598108101px) { [data-rnw-media-class="_visible_visible"] {display: flex;} }
+[data-rnw-media-class="hidden__1kbfcbz_b1430-hidden"]{ width:max(220px, calc(100vw - max(300px, calc((100vw - 910px) / 2 - 0px)) - 750px - 80px - 80px - 0px));}
+@media (max-width: 1430px) and (max-width: 9999999.10410510010010111095954910798102999812295984952514845104105100100101110px) { [data-rnw-media-class="hidden__1kbfcbz_b1430-hidden"] {display: none;} }
+@media (max-width: 700px) and (max-width: 9999999.10410510010010111095954910798102999812295984952514845104105100100101110px) { [data-rnw-media-class="hidden__1kbfcbz_b1430-hidden"] {display: none;} }
+[data-rnw-media-class="4600-90-111-204-197-__4600-112-118-197"]{ -ms-flex-pack:start;-webkit-box-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;padding-left:16px;padding-right:24px;width:auto;}
+@media (max-width: 700px) and (max-width: 9999999.5254484845574845494949455048524549575545959552544848454949504549495645495755px) { [data-rnw-media-class="4600-90-111-204-197-__4600-112-118-197"] { -ms-flex-negative:1;-ms-flex-pack:start;-webkit-box-pack:start;-webkit-flex-shrink:1;-webkit-justify-content:flex-start;flex-shrink:1;justify-content:flex-start;padding-left:0px;padding-right:16px;width:auto;} }
+[data-rnw-media-class="4378__4379"]{ height:40px;}
+@media (max-width: 700px) and (max-width: 9999999.52515556959552515557px) { [data-rnw-media-class="4378__4379"] { height:30px;} }
+[data-rnw-media-class="4389__4390"]{ border-right-width:0px;}
+@media (max-width: 700px) and (max-width: 9999999.52515657959552515748px) { [data-rnw-media-class="4389__4390"] { border-right-width:1px;} }
+[data-rnw-media-class="__187_b910-188"]{ -ms-flex-direction:row;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;flex-direction:row;}
+@media (max-width: 910px) and (max-width: 9999999.9595495655959857494845495656px) { [data-rnw-media-class="__187_b910-188"] { -ms-flex-direction:column;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;flex-direction:column;} }
+[stylesheet-group="20"]{}
+body:not(.dragging) [data-rnw-int-class="button___1827_"]:hover , body:not(.dragging) [data-rnw-int-class="button___1827_"]:focus { background-color:rgba(245,247,249,1.00);}
+body:not(.dragging) [data-rnw-int-class="button___1827_"]:focus:not(:focus-visible) { outline: none; }
+body:not(.dragging) [data-rnw-int-class="button___1827_"]:focus-visible { outline-color:#188694;outline-offset:0px;outline-style:auto;outline-width:2px;}
+body:not(.dragging) [data-rnw-int-class="button___1827_"]:hover [data-rnw-int-class="nearest___1835_"], body:not(.dragging) [data-rnw-int-class="button___1827_"]:focus [data-rnw-int-class="nearest___1835_"]{ color:rgba(92,105,117,1.00);}
+body:not(.dragging) [data-rnw-int-class="nearest___4369_"]:hover , body:not(.dragging) [data-rnw-int-class="nearest___4369_"]:focus { border-bottom-color:rgba(227,232,237,1.00);border-left-color:rgba(227,232,237,1.00);border-right-color:rgba(227,232,237,1.00);border-top-color:rgba(227,232,237,1.00);}
+body:not(.dragging) [data-rnw-int-class="nearest___4369_"]:focus:not(:focus-visible) { outline: none; }
+body:not(.dragging) [data-rnw-int-class="nearest___4369_"]:focus-visible { outline-color:#188694;outline-offset:0px;outline-style:auto;outline-width:2px;}
+body:not(.dragging) [data-rnw-int-class="nearest___4369_"]:hover [data-rnw-int-class="nearest___258_"], body:not(.dragging) [data-rnw-int-class="nearest___4369_"]:focus [data-rnw-int-class="nearest___258_"]{ color:rgba(59,69,78,1.00);}
+body:not(.dragging) [data-rnw-int-class="button___1438_"]:focus:not(:focus-visible) { outline: none; }
+body:not(.dragging) [data-rnw-int-class="button___1438_"]:focus-visible { outline-color:#188694;outline-offset:0px;outline-style:auto;outline-width:2px;}
+body:not(.dragging) [data-rnw-int-class="button___1438_"]:hover [data-rnw-int-class="nearest___1439-907737_"], body:not(.dragging) [data-rnw-int-class="button___1438_"]:focus [data-rnw-int-class="nearest___1439-907737_"]{ color:rgba(3,209,235,1.00);}
+body:not(.dragging) [data-rnw-int-class="nearest___354-907762_"]:hover , body:not(.dragging) [data-rnw-int-class="nearest___354-907762_"]:focus { color:rgba(52,109,219,1.00);}
+body:not(.dragging) [data-rnw-int-class="nearest___354-907762_"]:focus:not(:focus-visible) { outline: none; }
+body:not(.dragging) [data-rnw-int-class="nearest___354-907762_"]:focus-visible { outline-color:#2662d7;outline-offset:0px;outline-style:auto;outline-width:2px;}
+body:not(.dragging) [data-rnw-int-class="nearest___354-907762_"]:hover [data-rnw-int-class="nearest___354-907762_"], body:not(.dragging) [data-rnw-int-class="nearest___354-907762_"]:focus [data-rnw-int-class="nearest___354-907762_"]{ color:rgba(52,109,219,1.00);}
+body:not(.dragging) [data-rnw-int-class="nearest___2307-907790_"]:hover , body:not(.dragging) [data-rnw-int-class="nearest___2307-907790_"]:focus { color:rgba(14,84,93,1.00);}
+body:not(.dragging) [data-rnw-int-class="nearest___2307-907790_"]:focus:not(:focus-visible) { outline: none; }
+body:not(.dragging) [data-rnw-int-class="nearest___2307-907790_"]:focus-visible { outline-color:#188694;outline-offset:0px;outline-style:auto;outline-width:2px;}
+[data-rnw-int-class="nearest_274__354-907706_"]{ color:rgba(136,153,168,1.00);}
+body:not(.dragging) [data-rnw-int-class="nearest_274__354-907706_"]:hover , body:not(.dragging) [data-rnw-int-class="nearest_274__354-907706_"]:focus { color:rgba(3,209,235,1.00);}
+body:not(.dragging) [data-rnw-int-class="nearest_274__354-907706_"]:focus:not(:focus-visible) { outline: none; }
+body:not(.dragging) [data-rnw-int-class="nearest_274__354-907706_"]:focus-visible { outline-color:#188694;outline-offset:0px;outline-style:auto;outline-width:2px;}
+body:not(.dragging) [data-rnw-int-class="nearest____"]:focus:not(:focus-visible) { outline: none; }
+body:not(.dragging) [data-rnw-int-class="nearest____"]:focus-visible { outline-color:#188694;outline-offset:0px;outline-style:auto;outline-width:2px;}
+body:not(.dragging) [data-rnw-int-class="nearest____"]:hover [data-rnw-int-class="nearest___354-907706_"], body:not(.dragging) [data-rnw-int-class="nearest____"]:focus [data-rnw-int-class="nearest___354-907706_"]{ color:rgba(3,209,235,1.00);}
+body:not(.dragging) [data-rnw-int-class="link____"]:focus:not(:focus-visible) { outline: none; }
+body:not(.dragging) [data-rnw-int-class="link____"]:focus-visible { outline-color:#188694;outline-offset:0px;outline-style:auto;outline-width:2px;}
+[data-rnw-int-class="nearest_354-907706_362-907707-252__"]{ color:rgba(3,209,235,1.00);}
+body:not(.dragging) [data-rnw-int-class="link____"]:hover [data-rnw-int-class="nearest_354-907706_362-907707-252__"]{ -webkit-text-decoration-line:underline;color:rgba(14,84,93,1.00);text-decoration-line:underline;}
+body:not(.dragging) [data-rnw-int-class="nearest__4391__"]:hover { background-color:rgba(236,239,241,1.00);}
+body:not(.dragging) [data-rnw-int-class="nearest__4391__"]:focus:not(:focus-visible) { outline: none; }
+body:not(.dragging) [data-rnw-int-class="nearest__4391__"]:focus-visible { outline-color:#188694;outline-offset:0px;outline-style:auto;outline-width:2px;}
+body:not(.dragging) [data-rnw-int-class="BaseCard__2181-__2173-907805-"]:hover { -webkit-transform:translateY(-2px);box-shadow:0px 12px 13px rgba(0,0,0,0.02);transform:translateY(-2px);}
+body:not(.dragging) [data-rnw-int-class="BaseCard__2181-__2173-907805-"]:focus { border-bottom-color:rgba(3,209,235,1.00);border-left-color:rgba(3,209,235,1.00);border-right-color:rgba(3,209,235,1.00);border-top-color:rgba(3,209,235,1.00);}
+body:not(.dragging) [data-rnw-int-class="BaseCard__2181-__2173-907805-"]:focus:not(:focus-visible) { outline: none; }
+body:not(.dragging) [data-rnw-int-class="BaseCard__2181-__2173-907805-"]:focus-visible { outline-color:#188694;outline-offset:0px;outline-style:auto;outline-width:2px;}
+body:not(.dragging) [data-rnw-int-class="BaseCard__2181-__2173-907805-"]:hover [data-rnw-int-class="nearest___354-907706_"], body:not(.dragging) [data-rnw-int-class="BaseCard__2181-__2173-907805-"]:focus [data-rnw-int-class="nearest___354-907706_"]{ color:rgba(3,209,235,1.00);}
+body:not(.dragging) [data-rnw-int-class="BaseCard__2181-__2173-907805-"]:hover [data-rnw-int-class="nearest__354-907706__"]{ color:rgba(3,209,235,1.00);}</style>
+                <style>
+                    html,
+                    body {
+                        -webkit-font-smoothing: antialiased;
+                        text-rendering: optimizelegibility;
+                        width: 100%;
+                        min-height: 100vh;
+                        user-select: none;
+                        outline: none;
+                        position: relative;
+                    }
+                    /* Avoid Chrome to see Safari hack */
+                    @supports (-webkit-touch-callout: none) {
+                        html,
+                        body,
+                        .gitbook-root {
+                            /* The hack for Safari */
+                            min-height: -webkit-fill-available;
+                        }
+                    }
+                    .gitbook-root {
+                        display: flex;
+                        min-height: 100vh;
+                    }
+                </style>
+            
+        <script type="text/javascript" defer src="https://cdn.iframe.ly/embed.js <view-source:https://cdn.iframe.ly/embed.js>" async></script>
+        <script
+            type="text/javascript"
+            defer
+            src="https://cdn.polyfill.io/v2/polyfill.js?features=Intl.~locale.en <view-source:https://cdn.polyfill.io/v2/polyfill.js?features=Intl.~locale.en>"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div class="gitbook-root"><div class="css-1dbjc4n r-13awgt0 r-12vffkv" data-reactroot=""><div class="css-1dbjc4n r-13awgt0 r-12vffkv"><header data-rnw-media-class="4605__4606" class="r-1awozwy r-14lw9ot r-nzcix3 r-qklmqi r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1mlwlqe r-18u37iz r-1q142lx r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-gtdqiz r-ipm5af r-184en5c"><div class="css-1dbjc4n r-1awozwy r-6koalj r-18u37iz r-1jgb5lz r-ty80ws r-1pn2ns4 r-13qz1uu"><div aria-label="Show Table of Content" role="button" data-rnw-media-class="visible__hidden" data-rnw-int-class="button___1827_" tabindex="0" class="css-18t94o4 css-1dbjc4n r-1awozwy r-42olwf r-18c69zk r-rs99b7 r-1bnj018 r-1loqt21 r-18u37iz r-18kxxzh r-eu3ka r-1777fci r-1kb76zh r-1ny4l3l r-mk0yit r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr r-1aockid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest___1835_" class="r-h7gdob" style="height:18px;vertical-align:middle;width:18px"><path d="M3 12h18M3 6h18M3 18h18"></path></svg></div><a href="/ogf-documents-and-workspaces/ <view-source:https://docs.ogf.org/ogf-documents-and-workspaces/>" aria-label="OGF Documents and Work Spaces" data-rnw-int-class="nearest____" data-rnw-media-class="4600-90-111-204-197-__4600-112-118-197" class="css-4rbku5 css-1dbjc4n r-1awozwy r-1loqt21 r-18u37iz r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr" data-testid="public.headerHomeLink"><div data-rnw-media-class="4378__4379" class="css-1dbjc4n r-1awozwy r-1ro0kt6 r-18u37iz r-16y2uox r-1wbh5a2 r-6wscbn"><div data-rnw-media-class="hidden__visible" class="css-1dbjc4n"><div aria-label="" class="css-1dbjc4n r-13awgt0 r-1mlwlqe r-eu3ka r-1udh08x r-1aockid r-417010"><div class="css-1dbjc4n r-1niwhzg r-vvn4in r-u6sd8q r-ehq7j7 r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw"></div></div></div><div data-rnw-media-class="visible__hidden" class="css-1dbjc4n"><div aria-label="" class="css-1dbjc4n r-13awgt0 r-1mlwlqe r-1udh08x r-417010" style="height:30px;width:30px"><div class="css-1dbjc4n r-1niwhzg r-vvn4in r-u6sd8q r-ehq7j7 r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw"></div></div></div></div></a><div data-rnw-media-class="hidden__" class="css-1dbjc4n r-1awozwy r-1ro0kt6 r-18u37iz r-16y2uox r-1wbh5a2 r-17s6mgv r-1qhn6m8"><a href="https://www.ogf.org <view-source:https://www.ogf.org/>" dir="auto" aria-label="OGF Home" data-rnw-int-class="nearest___2307-907790_" class="css-4rbku5 css-901oao css-cens5h r-gb5jj r-1loqt21 r-gg6oyi r-ubezar r-1kfrs79 r-135wba7 r-ymttw5" style="-webkit-line-clamp:2">OGF Home</a><a href="https://www.ogf.org/documents <view-source:https://www.ogf.org/documents>" dir="auto" aria-label="OGF Published Documents" data-rnw-int-class="nearest___2307-907790_" class="css-4rbku5 css-901oao css-cens5h r-gb5jj r-1loqt21 r-gg6oyi r-ubezar r-1kfrs79 r-135wba7 r-ymttw5" style="-webkit-line-clamp:2">OGF Published Documents</a><a href="https://docs.ogf.org <view-source:https://docs.ogf.org/>" dir="auto" aria-label="OGF Documents and Work Spaces" data-rnw-int-class="nearest___2307-907790_" class="css-4rbku5 css-901oao css-cens5h r-gb5jj r-1loqt21 r-gg6oyi r-ubezar r-1kfrs79 r-135wba7 r-ymttw5" style="-webkit-line-clamp:2">OGF Documents and Work Spaces</a></div><div data-rnw-media-class="hidden__visible" class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2 r-1jj8364 r-16vg0q1 r-puj83k r-1pyaxff"><div aria-label="Search…" data-rnw-int-class="nearest___4369_" tabindex="0" class="css-1dbjc4n r-1awozwy r-42olwf r-kdyh1x r-rs99b7 r-1loqt21 r-18u37iz r-eu3ka r-1wtj0ep r-1qhn6m8 r-1pyaxff r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr r-13qz1uu" style="background-color:rgba(0,0,0,0.05)"><div class="css-1dbjc4n r-1awozwy r-18u37iz"><svg viewBox="0 0 24 24" fill="none" preserveAspectRatio="xMidYMid meet" class="r-1bnj018 r-1kb76zh" style="height:14px;vertical-align:middle;width:14px"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 4a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM2 10.5a8.5 8.5 0 1117 0 8.5 8.5 0 01-17 0z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.093 15.093a1 1 0 011.414 0l5.2 5.2a1 1 0 01-1.414 1.414l-5.2-5.2a1 1 0 010-1.414z" fill="currentColor"></path></svg><div dir="auto" data-rnw-int-class="nearest___258_" class="css-901oao r-1bnj018 r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb">Search…</div></div><div class="css-1dbjc4n"><div class="css-1dbjc4n r-1awozwy r-14lw9ot r-z2wwpe r-18u37iz r-1472mwg r-s1qlax r-7xmw5f"><div dir="auto" class="css-901oao r-gb5jj r-gg6oyi r-1enofrn r-1kfrs79 r-19r33im r-14yzgew r-tsynxw">⌃K</div></div></div></div></div><div data-rnw-media-class="visible__hidden" class="css-1dbjc4n r-1jj8364 r-puj83k r-1pyaxff"><div aria-label="Search…" role="button" data-rnw-int-class="button___1438_" tabindex="0" class="css-18t94o4 css-1dbjc4n r-1awozwy r-42olwf r-z2wwpe r-rs99b7 r-1bnj018 r-1loqt21 r-18u37iz r-18kxxzh r-mabqd8 r-1777fci r-1ny4l3l r-mk0yit r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr r-1yvhtrz"><svg viewBox="0 0 24 24" fill="none" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest___1439-907737_" class="r-h7gdob" style="height:14px;vertical-align:middle;width:14px"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 4a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM2 10.5a8.5 8.5 0 1117 0 8.5 8.5 0 01-17 0z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.093 15.093a1 1 0 011.414 0l5.2 5.2a1 1 0 01-1.414 1.414l-5.2-5.2a1 1 0 010-1.414z" fill="currentColor"></path></svg></div></div></div></header><div data-rnw-media-class="visible__hidden" class="css-1dbjc4n"><div class="css-1dbjc4n r-14lw9ot r-1d9grui r-qklmqi r-1777fci r-1pl7oy7 r-nsbfu8"><div class="css-1dbjc4n r-lchren"><div role="button" data-rnw-int-class="button___1438_" tabindex="0" class="css-18t94o4 css-1dbjc4n r-1awozwy r-42olwf r-z2wwpe r-rs99b7 r-1bnj018 r-1loqt21 r-18u37iz r-18kxxzh r-eu3ka r-1777fci r-1ny4l3l r-mk0yit r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr"><div class="css-1dbjc4n r-16y2uox r-1wbh5a2 r-11wrixw"><div dir="auto" data-rnw-int-class="nearest___1439-907737_" class="css-901oao css-vcwn7f r-h7gdob r-gg6oyi r-ubezar r-16dba41 r-135wba7">Links</div></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest___1439-907737_" class="r-h7gdob r-1jkjb" style="height:18px;vertical-align:middle;width:18px"><path d="M9 18l6-6-6-6"></path></svg></div></div></div></div><div data-rnw-media-class="188__187" class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2"><div data-rnw-media-class="hidden__visible_b1430-visible" class="css-1dbjc4n r-k200y r-14lw9ot r-18ayb63 r-13l2t4g r-18u37iz r-12dqhl9 r-17s6mgv r-1rnoaur r-gtdqiz r-1fo40xd" style="width:max(300px, calc((100vw - 910px) / 2 - 0px))" data-testid="page.desktopTableOfContents"><nav aria-label="Table of contents" class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1mlwlqe r-eqz5dr r-1q142lx r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-bnwqim r-1ipicw7 r-417010"><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2 r-puj83k"><div data-rnw-media-class="visible__hidden" class="css-1dbjc4n r-1awozwy r-14lw9ot r-nzcix3 r-qklmqi r-18u37iz r-sga3zk r-1wtj0ep r-1pn2ns4"><div aria-label="Close" role="button" data-rnw-int-class="button___1438_" tabindex="0" class="css-18t94o4 css-1dbjc4n r-1awozwy r-1kihuf0 r-42olwf r-z2wwpe r-rs99b7 r-1bnj018 r-1loqt21 r-18u37iz r-18kxxzh r-eu3ka r-1777fci r-1ny4l3l r-mk0yit r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr r-1aockid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest___1439-907737_" class="r-h7gdob" style="height:18px;vertical-align:middle;width:18px"><path d="M18 6L6 18M6 6l12 12"></path></svg></div></div><div class="css-1dbjc4n r-150rngu r-1ro0kt6 r-eqz5dr r-16y2uox r-1wbh5a2 r-11yh6sk r-1rnoaur r-1sncvnh"><div class="css-1dbjc4n r-1sc18lr r-1yzf0co"><div class="css-1dbjc4n"><a href="/ogf-documents-and-workspaces/ <view-source:https://docs.ogf.org/ogf-documents-and-workspaces/>" data-rnw-media-class="4389__4390" data-rnw-int-class="nearest____" class="css-4rbku5 css-1dbjc4n r-1awozwy r-42olwf r-z2wwpe r-rs99b7 r-1loqt21 r-18u37iz r-15zivkp r-1kb76zh r-1ceczpf r-1pn2ns4 r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr" style="background-color:rgba(133,214,224,0.10)"><div dir="auto" class="css-901oao r-gb5jj r-1ro0kt6 r-16y2uox r-1wbh5a2 r-gg6oyi r-1b43r93 r-b88u0q r-hbpseb r-oyd9sg">OGF Documents and Work Spaces</div></a></div><div class="css-1dbjc4n"><a href="/ogf-documents-and-workspaces/about-ogf-documents <view-source:https://docs.ogf.org/ogf-documents-and-workspaces/about-ogf-documents>" data-rnw-media-class="4389__4390" data-rnw-int-class="nearest__4391__" class="css-4rbku5 css-1dbjc4n r-1awozwy r-42olwf r-z2wwpe r-rs99b7 r-1loqt21 r-18u37iz r-15zivkp r-1kb76zh r-1ceczpf r-1pn2ns4 r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr"><div dir="auto" class="css-901oao r-1bnj018 r-1ro0kt6 r-16y2uox r-1wbh5a2 r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb r-oyd9sg">About OGF Documents</div></a></div><div class="css-1dbjc4n"><a href="/ogf-documents-and-workspaces/ogf-document-types <view-source:https://docs.ogf.org/ogf-documents-and-workspaces/ogf-document-types>" data-rnw-media-class="4389__4390" data-rnw-int-class="nearest__4391__" class="css-4rbku5 css-1dbjc4n r-1awozwy r-42olwf r-z2wwpe r-rs99b7 r-1loqt21 r-18u37iz r-15zivkp r-1kb76zh r-1ceczpf r-1pn2ns4 r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr"><div dir="auto" class="css-901oao r-1bnj018 r-1ro0kt6 r-16y2uox r-1wbh5a2 r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb r-oyd9sg">OGF Document Types</div></a></div><div class="css-1dbjc4n"><a href="/ogf-documents-and-workspaces/ogf-document-templates <view-source:https://docs.ogf.org/ogf-documents-and-workspaces/ogf-document-templates>" data-rnw-media-class="4389__4390" data-rnw-int-class="nearest__4391__" class="css-4rbku5 css-1dbjc4n r-1awozwy r-42olwf r-z2wwpe r-rs99b7 r-1loqt21 r-18u37iz r-15zivkp r-1kb76zh r-1ceczpf r-1pn2ns4 r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr"><div dir="auto" class="css-901oao r-1bnj018 r-1ro0kt6 r-16y2uox r-1wbh5a2 r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb r-oyd9sg">OGF Document Templates and Tools</div></a></div><div class="css-1dbjc4n"><a href="/ogf-documents-and-workspaces/current-ogf-published-documents <view-source:https://docs.ogf.org/ogf-documents-and-workspaces/current-ogf-published-documents>" data-rnw-media-class="4389__4390" data-rnw-int-class="nearest__4391__" class="css-4rbku5 css-1dbjc4n r-1awozwy r-42olwf r-z2wwpe r-rs99b7 r-1loqt21 r-18u37iz r-15zivkp r-1kb76zh r-1ceczpf r-1pn2ns4 r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr"><div dir="auto" class="css-901oao r-1bnj018 r-1ro0kt6 r-16y2uox r-1wbh5a2 r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb r-oyd9sg">Current OGF Published Documents</div></a></div><div class="css-1dbjc4n"><a href="/ogf-documents-and-workspaces/ogf-intellectual-property-statement-and-copyright <view-source:https://docs.ogf.org/ogf-documents-and-workspaces/ogf-intellectual-property-statement-and-copyright>" data-rnw-media-class="4389__4390" data-rnw-int-class="nearest__4391__" class="css-4rbku5 css-1dbjc4n r-1awozwy r-42olwf r-z2wwpe r-rs99b7 r-1loqt21 r-18u37iz r-15zivkp r-1kb76zh r-1ceczpf r-1pn2ns4 r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr"><div dir="auto" class="css-901oao r-1bnj018 r-1ro0kt6 r-16y2uox r-1wbh5a2 r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb r-oyd9sg">OGF Intellectual Property Statement and Copyright</div></a></div><div class="css-1dbjc4n"><a href="/ogf-documents-and-workspaces/data-protection-and-privacy <view-source:https://docs.ogf.org/ogf-documents-and-workspaces/data-protection-and-privacy>" data-rnw-media-class="4389__4390" data-rnw-int-class="nearest__4391__" class="css-4rbku5 css-1dbjc4n r-1awozwy r-42olwf r-z2wwpe r-rs99b7 r-1loqt21 r-18u37iz r-1kb76zh r-1ceczpf r-1pn2ns4 r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr"><div dir="auto" class="css-901oao r-1bnj018 r-1ro0kt6 r-16y2uox r-1wbh5a2 r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb r-oyd9sg">Data Protection and Privacy</div></a></div></div></div></div><div class="css-1dbjc4n r-1p0dtai r-u8s1d r-13qz1uu r-184en5c"><div class="css-1dbjc4n r-10ptun7" style="background-image:linear-gradient(3.141592653589793rad,#ffffff00,#ffffff)"></div><div class="css-1dbjc4n r-14lw9ot r-1l7z4oj r-ymttw5"><a href="https://www.gitbook.com/?utm_source=content&amp;utm_medium=trademark&amp;utm_campaign=-MHb4RS7n34_GZqU-Sl7 <view-source:https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MHb4RS7n34_GZqU-Sl7>" data-rnw-int-class="nearest___354-907762_" class="css-4rbku5 css-1dbjc4n r-1awozwy r-1b00too r-1xfd6ze r-1loqt21 r-18u37iz r-ymttw5 r-5njf8e r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr"><svg viewBox="0 0 1000 1000" fill="none" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest___354-907762_" class="r-1rasi3h r-eu3ka r-1aockid" style="vertical-align:middle"><path fill-rule="evenodd" clip-rule="evenodd" d="M562.168 159.724l325.95 162.727c15.062 7.519 15.298 28.898.404 36.746L465.19 582.283a82.875 82.875 0 01-75.639.83L123.74 450.409c-32.376-12.972-68.568 10.748-68.568 46.474 0 28.728 16.256 54.991 41.99 67.839l266.48 133.036c16.267-16.537 38.918-26.795 63.967-26.795 24.334 0 46.404 9.68 62.558 25.394L822.075 521.45a89.893 89.893 0 01-1.385-15.755c0-49.44 40.14-89.519 89.655-89.519S1000 456.255 1000 505.695c0 49.439-40.14 89.518-89.655 89.518-24.21 0-46.178-9.581-62.31-25.153L515.94 745.065a90.036 90.036 0 011.324 15.417c0 49.439-40.14 89.518-89.655 89.518s-89.655-40.079-89.655-89.518c0-4.572.343-9.063 1.006-13.451L68.622 612.068C26.566 591.072 0 548.153 0 501.205v-26.15c0-35.755 19.82-68.574 51.49-85.261l435.039-229.24a82.87 82.87 0 0175.639-.83zM427.609 794.912c19.044 0 34.483-15.415 34.483-34.43 0-19.016-15.439-34.431-34.483-34.431-19.044 0-34.482 15.415-34.482 34.431 0 19.015 15.438 34.43 34.482 34.43zm517.219-289.217c0 19.015-15.438 34.43-34.483 34.43-19.044 0-34.482-15.415-34.482-34.43s15.438-34.43 34.482-34.43c19.045 0 34.483 15.415 34.483 34.43z" fill="currentColor"></path></svg><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2 r-1qhn6m8"><div dir="auto" data-rnw-int-class="nearest___354-907762_" class="css-901oao r-1rasi3h r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb">Powered By <span class="css-901oao css-16my406 r-b88u0q">GitBook</span></div></div></a></div></div></nav></div><div class="css-1dbjc4n r-14lw9ot r-13awgt0"><div class="css-1dbjc4n r-1ro0kt6 r-18u37iz r-16y2uox r-1wbh5a2"><div data-rnw-media-class="__" class="css-1dbjc4n r-1ro0kt6 r-18u37iz r-16y2uox r-1wbh5a2 r-1777fci"><main class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1ro0kt6 r-eqz5dr r-16y2uox r-1wbh5a2 r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-bnwqim r-417010"><div data-rnw-media-class="4343__4342_b1430-196" class="css-1dbjc4n r-18u37iz r-1777fci"><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2 r-1l5ssaz"><div class="css-1dbjc4n r-eqz5dr r-1peese0 r-1ygmrgt"><div class="css-1dbjc4n r-18u37iz"><div data-rnw-media-class="4306__4307" class="css-1dbjc4n r-1awozwy r-18u37iz r-17s6mgv"></div><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2"><h1 data-rnw-media-class="236__235" class="r-1nf4jbm r-crgep1 r-1xnzce8" data-testid="page.title">OGF Documents and Work Spaces</h1></div><div data-rnw-media-class="visible__hidden_b1430-visible" class="css-1dbjc4n r-1awozwy r-18u37iz"><div aria-label="Page actions" role="button" data-rnw-int-class="button___1827_" tabindex="0" class="css-18t94o4 css-1dbjc4n r-1awozwy r-42olwf r-18c69zk r-rs99b7 r-1bnj018 r-1loqt21 r-18u37iz r-18kxxzh r-eu3ka r-1777fci r-1ny4l3l r-mk0yit r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr r-1aockid" data-testid="pageCompactToolbar.paletteButton"><svg viewBox="0 0 16 16" fill="none" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest___1835_" class="r-h7gdob" style="height:18px;vertical-align:middle;width:18px"><path d="M8 4a1 1 0 100-2 1 1 0 000 2zM8 8.75a1 1 0 100-2 1 1 0 000 2zM8 13.5a1 1 0 100-2 1 1 0 000 2z" fill="currentColor"></path></svg></div></div></div><div data-rnw-media-class="4309__4308" class="css-1dbjc4n r-1wzrnnt"><div class="css-1dbjc4n"><div dir="auto" class="css-901oao r-1rasi3h r-gg6oyi r-adyw6z r-16dba41 r-17rnw9f r-1xnzce8">Overview of the Open Grid Forum document collection; how to use OGF&#x27;s document preparation templates and spaces, and their relation to the OGF public process for document development.</div></div></div><div data-rnw-media-class="4309__4308" class="css-1dbjc4n"></div></div></div></div><div data-rnw-media-class="__127" class="css-1dbjc4n"><div class="css-1dbjc4n r-bnwqim"><div data-testid="page.contentEditor" data-slate-editor="true" data-document-key="f8891c5a66174f7286414dbb241236a0" data-key="f8891c5a66174f7286414dbb241236a0" autoCorrect="on" spellcheck="true" style="outline:none;white-space:pre-wrap;word-wrap:break-word"><div style="content-visibility:auto;contain-intrinsic-size:0 64px"><div class="css-1dbjc4n r-bnwqim"><div data-rnw-media-class="4220-196__4218-_b1430-196" class="css-1dbjc4n r-1ro0kt6 r-18u37iz r-16y2uox r-1wbh5a2 r-1777fci"><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2 r-1l5ssaz"><div data-rnw-media-class="4219-__4217" class="css-1dbjc4n"><div class="css-1dbjc4n"><div data-key="e030eb006f0745c986903045293f1bbf" class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1mlwlqe r-eqz5dr r-1q142lx r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-xd6kpl r-1ygmrgt r-1yzf0co r-bnwqim r-417010"><div data-block-content="e030eb006f0745c986903045293f1bbf" class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1ro0kt6 r-eqz5dr r-16y2uox r-1wbh5a2 r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-bnwqim r-417010"><h2 data-rnw-media-class="__" class="r-obd0qt r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1mlwlqe r-18u37iz r-1q142lx r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-bnwqim r-417010" id="purpose"><div dir="auto" data-rnw-media-class="212__211" class="css-901oao r-1nf4jbm r-1loqt21 r-fdjqy7 r-1xnzce8" id="text-purpose"><span data-key="0eb853ce5995449a83dfdfce40462b09"><span data-offset-key="0eb853ce5995449a83dfdfce40462b09:0">Purpose</span></span><a href="#purpose <view-source:https://docs.ogf.org/ogf-documents-and-workspaces/#purpose>" aria-label="Direct link to heading" data-rnw-int-class="nearest_274__354-907706_" class="css-4rbku5 css-901oao css-16my406 r-1awozwy r-1loqt21 r-xoduu5 r-1jkjb r-orgf3d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet" style="height:20px;vertical-align:middle;width:20px"><path d="M4 9h16M4 15h16M10 3L8 21M16 3l-2 18"></path></svg></a></div></h2></div></div></div></div></div></div></div></div><div style="content-visibility:auto;contain-intrinsic-size:0 112px"><div class="css-1dbjc4n r-bnwqim"><div data-rnw-media-class="4220-196__4218-_b1430-196" class="css-1dbjc4n r-1ro0kt6 r-18u37iz r-16y2uox r-1wbh5a2 r-1777fci"><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2 r-1l5ssaz"><div data-rnw-media-class="4219-__4217" class="css-1dbjc4n"><div class="css-1dbjc4n"><div data-key="5e0dff3041ae449882d0c7659c931949" class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1mlwlqe r-eqz5dr r-1q142lx r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-xd6kpl r-tskmnb r-1yzf0co r-bnwqim r-417010"><div data-block-content="5e0dff3041ae449882d0c7659c931949" class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1ro0kt6 r-eqz5dr r-16y2uox r-1wbh5a2 r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-bnwqim r-417010"><div dir="auto" class="css-901oao r-1nf4jbm r-gg6oyi r-ubezar r-16dba41 r-135wba7 r-fdjqy7 r-1xnzce8"><span data-key="f1e792cda3474330a6fb4c0658bac0e3"><span data-offset-key="f1e792cda3474330a6fb4c0658bac0e3:0">Open Grid Forum documents are prepared according to an open public process. The primary organizational method for current OGF working group, community group, and reserach group activity is through the </span></span><a href="https://github.com/opengridforum <view-source:https://github.com/opengridforum>" data-rnw-int-class="link____" class="css-4rbku5 css-1dbjc4n r-1loqt21 r-1471scf r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr"><span data-key="7f4c5463d791452296602efe1224ea5a" data-rnw-int-class="nearest_354-907706_362-907707-252__" class="r-crgep1"><span data-key="03ae23b37c4b446c8323c80fffcbb674"><span data-offset-key="03ae23b37c4b446c8323c80fffcbb674:0">OGF organizational pages on GitHub</span></span></span></a><span data-key="3b0faaac9fa7412e9ae74a512951d211"><span data-offset-key="3b0faaac9fa7412e9ae74a512951d211:0">. Final documents are published once complete on the </span></span><a href="https://www.ogf.org/documents/ <view-source:https://www.ogf.org/documents/>" data-rnw-int-class="link____" class="css-4rbku5 css-1dbjc4n r-1loqt21 r-1471scf r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr"><span data-key="2331362db1ef459f98fb0d7f6e3584d4" data-rnw-int-class="nearest_354-907706_362-907707-252__" class="r-crgep1"><span data-key="10ad4b227f414ad298d230b85826849c"><span data-offset-key="10ad4b227f414ad298d230b85826849c:0">Documents page</span></span></span></a><span data-key="edd85b6ba9ac41e38824c10de8158ada"><span data-offset-key="edd85b6ba9ac41e38824c10de8158ada:0"> of the </span></span><a href="https://www.ogf.org <view-source:https://www.ogf.org/>" data-rnw-int-class="link____" class="css-4rbku5 css-1dbjc4n r-1loqt21 r-1471scf r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr"><span data-key="ed27d86271fb4514b1a4ee80f8831398" data-rnw-int-class="nearest_354-907706_362-907707-252__" class="r-crgep1"><span data-key="f694eac822234020841b1b89b371a58d"><span data-offset-key="f694eac822234020841b1b89b371a58d:0">OGF web site</span></span></span></a><span data-key="4c598cecf1db4449b749f4f91fc4496e"><span data-offset-key="4c598cecf1db4449b749f4f91fc4496e:0">.</span></span></div></div></div></div></div></div></div></div></div><div style="content-visibility:auto;contain-intrinsic-size:0 112px"><div class="css-1dbjc4n r-bnwqim"><div data-rnw-media-class="4220-196__4218-_b1430-196" class="css-1dbjc4n r-1ro0kt6 r-18u37iz r-16y2uox r-1wbh5a2 r-1777fci"><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2 r-1l5ssaz"><div data-rnw-media-class="4219-__4217" class="css-1dbjc4n"><div class="css-1dbjc4n"><div data-key="78358bf2ba8c49da9e607f31a9e59887" class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1mlwlqe r-eqz5dr r-1q142lx r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-xd6kpl r-tskmnb r-1yzf0co r-bnwqim r-417010"><div data-block-content="78358bf2ba8c49da9e607f31a9e59887" class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1ro0kt6 r-eqz5dr r-16y2uox r-1wbh5a2 r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-bnwqim r-417010"><div dir="auto" class="css-901oao r-1nf4jbm r-gg6oyi r-ubezar r-16dba41 r-135wba7 r-fdjqy7 r-1xnzce8"><span data-key="f50e66bcae2449f2a5afb2f0b18b6715"><span data-offset-key="f50e66bcae2449f2a5afb2f0b18b6715:0">Any method of preparing a document according to the OGF community process is acceptable. The use of GitBook spaces is also available to encourage collaborative development of community-based documents for submission through this process as decribed below. Use of GitBook is </span><strong data-slate-leaf="true" data-offset-key="f50e66bcae2449f2a5afb2f0b18b6715:1" class="r-b88u0q r-crgep1">not required</strong><span data-offset-key="f50e66bcae2449f2a5afb2f0b18b6715:2">, but is intended as a supplement to assist with document preparation workflow.</span></span></div></div></div></div></div></div></div></div></div><div style="content-visibility:auto;contain-intrinsic-size:0 64px"><div class="css-1dbjc4n r-bnwqim"><div data-rnw-media-class="4220-196__4218-_b1430-196" class="css-1dbjc4n r-1ro0kt6 r-18u37iz r-16y2uox r-1wbh5a2 r-1777fci"><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2 r-1l5ssaz"><div data-rnw-media-class="4219-__4217" class="css-1dbjc4n"><div class="css-1dbjc4n"><div data-key="a6bbd34328364851baf041c5ec4d4efc" class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1mlwlqe r-eqz5dr r-1q142lx r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-xd6kpl r-tskmnb r-1yzf0co r-bnwqim r-417010"><div data-block-content="a6bbd34328364851baf041c5ec4d4efc" class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1ro0kt6 r-eqz5dr r-16y2uox r-1wbh5a2 r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-bnwqim r-417010"><div dir="auto" class="css-901oao r-1nf4jbm r-gg6oyi r-ubezar r-16dba41 r-135wba7 r-fdjqy7 r-1xnzce8"><span data-key="a95a2e2a915248efba4501ec647a208a"><span data-offset-key="a95a2e2a915248efba4501ec647a208a:0">For additional details on OGF document style including example formatting guidelines, refer to the </span></span><a href="/ogf-documents-and-workspaces/ogf-document-templates <view-source:https://docs.ogf.org/ogf-documents-and-workspaces/ogf-document-templates>" data-rnw-int-class="link____" class="css-4rbku5 css-1dbjc4n r-1loqt21 r-1471scf r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr"><span data-key="5b103d0a2e0f4e1db21c8873e4627368" data-rnw-int-class="nearest_354-907706_362-907707-252__" class="r-crgep1"><span data-key="aec2b1ef80bc4ad3a220e0c0bd170a54"><span data-offset-key="aec2b1ef80bc4ad3a220e0c0bd170a54:0">OGF Document Templates section</span></span></span></a><span data-key="1245a476c81746a78bf7f6aaa324b1b8"><span data-offset-key="1245a476c81746a78bf7f6aaa324b1b8:0"> of this document.</span></span></div></div></div></div></div></div></div></div></div><div style="content-visibility:auto;contain-intrinsic-size:0 88px"><div class="css-1dbjc4n r-bnwqim"><div data-rnw-media-class="4220-196__4218-_b1430-196" class="css-1dbjc4n r-1ro0kt6 r-18u37iz r-16y2uox r-1wbh5a2 r-1777fci"><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2 r-1l5ssaz"><div data-rnw-media-class="4219-__4217" class="css-1dbjc4n"><div class="css-1dbjc4n"><div data-key="229d670ccea34eef97c7326a7de12123" class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1mlwlqe r-eqz5dr r-1q142lx r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-xd6kpl r-tskmnb r-1yzf0co r-bnwqim r-417010"><div data-block-content="229d670ccea34eef97c7326a7de12123" class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1ro0kt6 r-eqz5dr r-16y2uox r-1wbh5a2 r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-bnwqim r-417010"><div dir="auto" class="css-901oao r-1nf4jbm r-gg6oyi r-ubezar r-16dba41 r-135wba7 r-fdjqy7 r-1xnzce8"><span data-key="2802f918cc9e4edb968633e605ad0bc8"><span data-offset-key="2802f918cc9e4edb968633e605ad0bc8:0">Further information including a full description of the document process and advice intended to help to guide selection from among these categories is contained in GFD.152 (Open Grid Forum Document Process and Requirements) available at: </span></span><a href="https://www.ogf.org/documents/GFD.152.pdf <view-source:https://www.ogf.org/documents/GFD.152.pdf>" data-rnw-int-class="link____" class="css-4rbku5 css-1dbjc4n r-1loqt21 r-1471scf r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr"><span data-key="95eacfd0eddd4518bb4c16739918c546" data-rnw-int-class="nearest_354-907706_362-907707-252__" class="r-crgep1"><span data-key="2489b5a1e8b84178b8e1b4d45988a914"><span data-offset-key="2489b5a1e8b84178b8e1b4d45988a914:0">https://www.ogf.org/documents/GFD.152.pdf</span></span></span></a><span data-key="42b6ac961abe4317afffab9e28f6c740"><span data-offset-key="42b6ac961abe4317afffab9e28f6c740:0"><span data-slate-zero-width="z">​</span></span></span></div></div></div></div></div></div></div></div></div></div></div><div data-rnw-media-class="4343__4342_b1430-196" class="css-1dbjc4n r-18u37iz r-1777fci r-11c0sde"><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2 r-1l5ssaz"><div data-rnw-media-class="4346__4345" class="css-1dbjc4n"><div data-rnw-media-class="__187_b910-188" class="css-1dbjc4n r-1peese0"><a href="/ogf-documents-and-workspaces/about-ogf-documents <view-source:https://docs.ogf.org/ogf-documents-and-workspaces/about-ogf-documents>" data-rnw-media-class="__" data-rnw-int-class="BaseCard__2181-__2173-907805-" class="css-4rbku5 css-1dbjc4n r-1awozwy r-14lw9ot r-190qawg r-z2wwpe r-rs99b7 r-1loqt21 r-1ro0kt6 r-18u37iz r-16y2uox r-1wbh5a2 r-1udh08x r-nsbfu8 r-1otgn73 r-eafdt9 r-1clhhh9 r-lrvibr"><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2"><div class="css-1dbjc4n"><div dir="auto" class="css-901oao r-1rasi3h r-gg6oyi r-1enofrn r-16dba41 r-14yzgew">Next</div></div><div dir="auto" data-rnw-int-class="nearest___354-907706_" class="css-901oao css-vcwn7f r-1nf4jbm r-gg6oyi r-ubezar r-majxgm r-135wba7">About OGF Documents</div></div><div class="css-1dbjc4n r-1ow6zhx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest__354-907706__" class="r-1rasi3h r-1472mwg" style="vertical-align:middle;width:24px"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></div></a></div><div class="css-1dbjc4n r-1yv4afn r-5kkj8d r-1ygmrgt"><div data-rnw-media-class="_188_187" class="css-1dbjc4n r-1awozwy r-1wtj0ep"><div data-rnw-media-class="_162_" class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2"><div dir="auto" class="css-901oao r-1rasi3h r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb">Last modified <span aria-label="2022-11-08 09:22 UTC" class="css-901oao css-16my406">19d ago</span></div></div><div data-rnw-media-class="_visible_visible" class="css-1dbjc4n"></div></div></div></div></div></div></div></main></div><aside aria-label="Page outline" data-rnw-media-class="hidden__1kbfcbz_b1430-hidden" class="r-1oszu61 r-k200y r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1mlwlqe r-eqz5dr r-1q142lx r-crgep1 r-pw2am6 r-icyqz7 r-1mkpi1y r-ifefl9 r-bcqeeo r-1rnoaur r-t60dpp r-gtdqiz r-417010" style="top:104px" data-testid="page.outline"><div class="css-1dbjc4n r-1peese0 r-hu79xy"><div class="css-1dbjc4n r-1mdbw0j r-wk8lta r-5njf8e"><div data-rnw-int-class="nearest____" tabindex="0" class="css-1dbjc4n r-1awozwy r-1loqt21 r-18u37iz r-dnmrzs r-1guathk r-oyd9sg r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr r-7xmw5f" data-testid="page.exportButton"><div class="css-1dbjc4n r-1kb76zh"><svg viewBox="0 0 16 16" fill="none" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest___354-907706_" class="r-1rasi3h r-10ptun7" style="vertical-align:middle;width:16px"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.5A.5.5 0 01.5 2h13a.5.5 0 01.5.5V8h-1V3H1v12h12.5v1H.5a.5.5 0 01-.5-.5v-13z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M3.1 1a.1.1 0 00-.1.1v.4H2v-.4A1.1 1.1 0 013.1 0h1.8A1.1 1.1 0 016 1.1V5a2 2 0 11-4 0V4h1v1a1 1 0 102 0V1.1a.1.1 0 00-.1-.1H3.1zM2 9.5a.5.5 0 01.5-.5H4a2 2 0 110 4H3v1H2V9.5zm1 .5v2h1a1 1 0 000-2H3zM7 9.5a.5.5 0 01.5-.5h1a2.5 2.5 0 010 5h-1a.5.5 0 01-.5-.5v-4zm1 .5v3h.5a1.5 1.5 0 100-3H8zM12 9.5a.5.5 0 01.5-.5H15v1h-2v4h-1V9.5z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15 12h-2.5v-1H15v1z" fill="currentColor"></path></svg></div><div dir="auto" data-rnw-int-class="nearest___354-907706_" class="css-901oao css-vcwn7f r-1bnj018 r-1ro0kt6 r-16y2uox r-1wbh5a2 r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb">Export as PDF</div></div><div data-rnw-int-class="nearest____" tabindex="0" class="css-1dbjc4n r-1awozwy r-1loqt21 r-18u37iz r-dnmrzs r-1guathk r-oyd9sg r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr r-7xmw5f"><div class="css-1dbjc4n r-1kb76zh"><svg viewBox="0 0 16 16" fill="none" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest___354-907706_" class="r-1rasi3h r-10ptun7" style="vertical-align:middle;width:16px"><path d="M14.11 6.6l-.16-.09c-.042.343-.13.68-.26 1A3 3 0 0115 10a3 3 0 01-3 3H8a3 3 0 010-6h.82A3 3 0 009 6H8a4 4 0 000 8h4a4 4 0 002.11-7.4z" fill="currentColor"></path><path d="M1.89 9.4l.16.09c.042-.343.13-.68.26-1A3 3 0 011 6a3 3 0 013-3h4a3 3 0 110 6h-.82A3 3 0 007 10h1a4 4 0 000-8H4a4 4 0 00-2.11 7.4z" fill="currentColor"></path></svg></div><div dir="auto" data-rnw-int-class="nearest___354-907706_" class="css-901oao css-vcwn7f r-1bnj018 r-1ro0kt6 r-16y2uox r-1wbh5a2 r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb">Copy link</div></div></div></div></aside></div></div></div></div></div></div>
+        <script>
+            // Rendered with GitBook 10.9.204-39fd6601f9cab49c506480444c81be3e8262a1b3-3540226880
+            // Space -MHb4RS7n34_GZqU-Sl7
+            
+            window.__GITBOOK_WAS_SSR = true;
+            window.__GITBOOK_INITIAL_PROPS__ = "㞂‖འ츂аⶁ䱀⸐ӂز聴ဎ怙鄁㬒4 悔⠀ꂌ恢তୃ글꺨证ᰬ밃례ꀚ쨀܄롑䖢঳᠀▣왆錘ᠱ镇䀞髂旊ଐॣẄࠊૠ蒋䪵ፐⰔ刄䄀ᬘᘔਤ木⡧࠸స䢈멜ਔ瘔Ⰰ℀伮iʔࠀ夬\u0015v㴢切焢耭噧\u0006屢溈튀畚耦⡑굧⤔\u000f粀└7Ӥ퓌V\ryG℀㕜I䅺튈⎀䴀慚蕚耑⵼휪蠐금밅糿⹂讃ʔ倥䰀เաቂ䎞୸戹컖窜評媍쀈컕ꫡ昷冑\ude10˰ŋ㢪撌娠ࠪ㊩ఀ誣嶳죦҆퐀拜뉂鮯轫㥶ⵞ琪ꋐʨ㜙␩鎊욋\uda48厀ᦙ廖叐ࢮฅ倂犔쬆ƹⅦᄖ尙햂ᡒꀈ↏㜁⺄\udaaaᄪ띀ਣ֨쫀칈漢魖吀壉놳庈朅2䝈吒ᑖ䨀攙昴㯍\ud82cꪞ颯䔛⠢㜭䋂黓궒奃ⰲ謂킧⶛뀔᷇ጥ선촊ⴄ᥂莁\udcc0鉢ਉ澴ၨ쐘準䜧鋃퉠ᡐ㌇씤펠焀㙮띓斩씾䐜ᨂ芽息觍致綀耗캃Ųႂ蛍꘥̀Ƶ䀘ᗀ行လ嗤\u0002̕ː怈ᳱ\u0014榋ˡЊȢ퇈쨴윱Ⱋ᫁邘ꈌ蒡ꠐⰊ䉐됣ೂ塁Ẁ蠒ࠫӃ鸼ᡆ峷㨟ణ袩ಈꊨꔶ袰걛উ遘䘡각ቍᄴฦ艂ࣴᐆꊸ㌍䡢тރ抴礴賀결␆䉠含藣쒡уᄰ줔䨙ግⵔ甘적瓨羂ᄁ砆\ude84䰖勞ꎀ땄쀇텩\uda7d處࢞ꏃ룟≓ሤ삪؊ꑌⰬ儢䍸逈ᨖ炸᱔葍瀜䭁쥖⒅⋠瘃飣㠮⮖鹗躇邠펆斘롮老줽띬샨瞏炲䁲銡ꠚ⚕ꃨ멞龤ᡆ熒攻с\ud8f5㴈쯅⏼ほ퇶絟䀣뽟\udff4΀퀫₁ё࿩㏀䠶▨⃜㌂ᎈ㌐၁腐尒㥢ㆣ懄΂縖ꪓ쐐뙇ਂ᢫䗹蠈ِ妳欮轓걒ᧁ줘昖ސဍ지吾쁉뱟᫆妺欞蚰尷π典冀ä䵆窀螱ⱥȁ胥ꐚ삁갦捀ŉ䙞䔫탒貫⧋뢭⯪筷遁陶᜝将ݝ僞Ὺ糵훩떭占↔㠘老㠖❡혀ដ㳘掳嗱씶窇ጴ2Њ●倬ᧀ䀗⨒䙰줜ﱬ셸泙恙狒᧣㐸刔腁፧舧\ud988囋䍗ࣩ阁긢໮Š⠈ᕢ芸㕬\u0013硔㢃偊斩炠埂↹ྐ커ٰ逓抃㳨㤑䚙蠥鑯堦붐乳鋣屻裰帖臰ࣀ粉럖뱿仱\ude7a趬촙ꋔ瞔颀俆౾跧ꢣู䍮臤眗쏄㏉聐㚴\ud8f4ᮣ큧쒃Ԡ\udd17⃢狭감Ȇ횸އ퐻쳘뀠ዔࠅϐ㯋臊鴄幐⮁䁁஀抦莑懑נּ硿⸈䅈┅ꃍ虨䆗뽝ͫ嵤䎈䞒늪床\ud81d춵藘䮎´਌⼧郂හ䩞࿥ಘ肐列茵┆풠㊵줁〨ᅀ䀇鋀柔莐뗊鴷ਆ\udcbb蛲悵씁陰렗邠粈셰㳧䀰ʀ淣ቅȨᐷ찀Ɖ먖ꙸ㢔〔ⴉ﷨㎂ሰफ⠁␥瀘ಡ드刂醨䠀堐᷂쥰Ⓚ堳엤ꆖ憐谀튚䠁ӫ霧ࡒ딝踖ᐳ쌸皮胂ц怠䠀";
+            window.__GITBOOK_INITIAL_STATE__ = "㞂⁦ॠ上惎Ű㶬䀮净ค〱밃퀋䀬耒Ęˀኀ쨃뀇怳㔃‖肎ŕ诐ͨ킬nრ䉌측¬4ωᗀ᪞嬘ڒ䎠⚀愀⨁궬ė䨀ⶖ萸ᇎ汦O琐NuF⃪㠀䔀兺ࡋᄼ墀㤕ᡉЕကᨐ尀獸朐㔀ᥳ)&␕歘耫ᵆᜮ\u000f條6A狒\udb08昀ፀ렀ଘ᠄㲐凸㰨ࠬ⽹䂵䤘⡩᠀眀Ȥぃ葩쎵Ⱈ晃긕퇃耱ᐭᝃ톤洗ᮄ䎼␈葃σ궘n䎤줄療Ჴ瀘○蓰Α쀾強꿐苠ꂞ漙옂褼踌桶쏡橭㳣ڂᵠᒰ姉ٰ릨冸괥сς彸جʄ일熋消褅臻【:禔왧㍀聜紀ܱ谠ȗ㍘ﲶẬ傭ቃ䧴฀빖쿤\uda55櫵䚋䶩훫落⣂芕賦頒ᒊ㚲㇈繊ᜏ쏁耀ᐠ\u0006㰡圲☰薬㔸ൔꖢ슍⦣㺾됁샠⃼흀鞇솒甠廊쨶茈豣偈⫁ᩒᄐଙ๺갥⹳疸˻娍稚趽\udc81਑튤᠕鳲䴂둘齁쩅詪峣粷愀袙輦Џ쐂䀠熀흝䙪ᑥᥳわҡ赖ᣓ঍㰔愜灆܅恰峚膀숌ㅢ঍砵菀쁖Ѕ㲊ኃā魖\uddb0㑰⠐选꣛퀥聰冇밄᠔\ud905܋᝕⍦凡ࡐ嬐瀂ਵ㳈爕ࡱ猁ኂ쳀⚏ꎀ낈ᲁᆨ劀䨒ഁ䧤㥄蕃吹걒岔ꐱᩑ遀䨷줖㠙敘셀鹧㴛ဋസ࿰Ϧ怴ँ᠘ఄꅳᧅಡ⠚鬎ꀷ㰗㉑袑\udf31옌┙ᡔⰴ悂ゞ抽덎⃒䄊〘蓹沄ᢀ䄜깞ͽ왓흕餂㺕⁼ᰨ䇈ᇆꎵ贀௏ʹਜᢢᲛᛍ놁Ȗⶊꏝ佀텒풍⭉틴茨줳䍰툶赣磑㙍却팱췳䋘딭쭊캏\udd0f㐑蟉ꭚ\udbaf걂蘻棬‮쏅绅着䜱쉵⬐링牜ܡ섍悷᷄灳逦歚ე몞맏馆ㆂ暙蛥⊄ꆬ咅ᄜ‎鍃셨〜ꄑ쵒頬밠毑ꨂ嫢Ѧၛ䑢༕呶囘苽䥟颅玈Kϰ噂鉢헟ᢤఈ怜١䨉䉋僬갃岂栩󒗣呴ꁪ遒膁⠰露䩵༛䊨갰㭂陿儁栾ὥ覢䦚≐橳྇⢴ᄅ䌀쀹늱⛖\uda33汢盦㖉쇘諬驫旹昄坁ⴅ字╫訂홵嬙෕䓘胍릝턘꩹=㧮枥셸崗溈썩c㣁㉌匴쌶쳳ˈ넬쬊풠ߵ᪄᦬풢蚘逓랁ྶ崇਱襂肙쏐놳ќ䣐֠₃ԉꛡ㲧蟉蘆跡ʾ䌲뗌ꈊ紁꧛뀤탡晞ﰜ銎뫎쪹䎉惇ꦷ㘉않倈ଐ䃜妏ꎐ䘎梴⅁䱜ᒡ蘽辳픾潂墳毣뿒䀇齒츐਍徤㋚鿛ﭶѪᑠ僤⩹媃ⅸᤃꁀਜ䨘탔䐛馐瓲昑䤸ၨ᚟䒰㰒寬昄ꀄࡇ\ud8e6᳀䁣ρ栈䅰ೈ嘞쌸眍ぇࢠꅸ合愑肗㰄ꃂᡀ\udcd4ం肘ऑ䱍䑊䄇ʇ〈넨ı쁈䪤؁⎧蜊뇟粏呯㍰增܀෕䄷蘞ꌇ례䤏胼㽐亨╣ꂍ聩㎼ڌ᪌㋁㓍駳㥪泊㾎௚ශ㭠삀椌鐇㢑킲ᜲᙋफ़ᎊ삨綉〺ὅㅕ෡ﵐฬ冎酗ꘁƝ⵪犌충襟蜀陾䋉ځু听Ȋ䵃ä仙ഹኤᔘ䨕芌㰄ၪ၄情媃ᩬ꒠Ꭳ㖞긫ц猢ú│䗈諈\ud96a潵벒앙Ń摗疮ﶴ嗏꺍합ೄ廡蠊⪦좀ㄟ瓨ꇲ稧헫鼏ꕽ뺭 柦ೃ᯳ꊗ☙쌞쟽ᆕ訁‵莎捌ీ㳢脸\ud919͉콣᱂갺샼쬇倫ࠠꗃ靄ȗڠ㔃煀ຆ리ⵃᜰ⁛๨ဴ䋹吏肸Ђᄼ䵂ᨣ㓵뙨˙脛䊱㵢誰ゥᒺ虧櫴僌枳ネ蝉秄寫据涭꿙註줫粴ꣁښ쉌ᤋ褫ꇇ㳛׉鱚鰉踩씔찖쁢㡋\udb60ᶔᴢ虃䱇蕰渝쁸켕F䦁㠷铢ꗋ쳉湺鄼菤䢒쨜綂ᳩѡ胚蹕坺⢫皲ꡎ珐⇸ᛓ倜⌂碖ଠ譀㨐䆚稅槜草悴Ὣ늰欱໗혙겚⣔몢 硔㈟罭雏롵뻔凔ㅥ닅훌૔頉렲裣䉊ڀ퐼ࡅᶱꉐ핔獁吨劔ขࠠ飒瓨慂矕﯈휟ឦ緞ꗲ嘆ퟩ嘗鵵皆ڗ䛿翫貀娴补싄蛘ᣀ㜢഼뚭ʰ䣓᪞ᾂꃑຂ\ud830苠㨾쎀∔췑帺ᒣ띉藑徦䬆ꐲ땗ᳪ㗒丁汒ǽ湤쩡ᖖ㬘࣋堩䦂ꌁ限䘈셫⋅᠓飓풔┹犂盭ⷒ饕꺭땵圪鷃坸᫐୦ꑩ걳爲횹ꔒꋭ窏玎ꭄ흗叽\udd7f鴍옦闺胔ᬬ䁛䃾눮ፈ튳ﲶㄶ琥꒹䁒䬙欬ᆛ䁀怟䂈紉蓀ࢃ丼డ衑촒̹푡뫯땏ᴝ솢ꪯ\ud905땅ڂ釁갮脰㘉셸₆ၢ೦㺃倁둀ข퀝ఀꡉ蓱쨖恚혔舰ᴉ䇍˕ꃻঠ耀ப뙬돒ⳕ㧹ᕪ\udcc3ꢆબ\ud861矴塚ㆣ鱲乵쐑䋡轀핂㗮攘ೂㄲ足땀桭ޡఉ茰嘎숸禁\uda69ㅅꀰཱྀ栟볠氮∁㬬孡珕㷔湮Ꜿ嚷庹蜟釰ឆ\ud89e紏꠱秳㱎⧃㥳폜悬హ䖬ᴟ곺䤊ﾥ쁤휍⤫裒芇᫶\ude9e䈪㤼ّ們䥛㢣´盓龯드쭬牲ᇀ촯̚ద퉪㔫屶튀ࣁᮏڜ\ud820ⰇÐ℄⃁剣੍俻ࠇࢼ⠃硯戃ᔝ刹椢聛튧䔃쐠◱卜앟㇄怍加㼽晐쨓რ뼫渧ٳ䏰⸀豌牀嬇䀰Ŗ䑁睉䜙ᯁ읎炨檃꠆虨嚇栮藨Ƈ領펍Ӕՠ唅℉幄뙋咷䭌뛋匷젓ꔘ甤퉭◒紥恃☲䤉괺큭㺂洖퍭㗕킎拦➁挥ⷡᘳࡉ⸕찞ᏡĒᄊࡗ劶ѽ밁ခϠ墇\ud820蝰Ⰰ瀝׌ᰀ薐֥긙쁥㙗졼늅଱⭰̫䆖\ud910Ӕ悢ᔚఠᰃ聄䒌䈀ᵘфൂ⑹֦6牍䁚喀彀蟵㉖๺ඩ䷶鱠ဦ䒡√铟礰‚膨⊗恈⌈䨦譹۪െ둏Ⰷ␱䊨 覯䗤ࠟ௰肊࢐謈袊裯ↄ昁吞‐娄ᠻ߲缗堄ꁂ觾ᐄ긜裲䊆Ѕ覐俲䀗Р䤅챂Ҡ埰谼趰戁꠶冨䘄퐅豿Ⰷᥟ迸ꐀ⢢趘㠀R᪂砚灠ᘇ恮ߠ℅၆ۄ\udc48ꁔ⋌墆怪苠纷ꁒĈ渆홳䜤踈蟰㣈輤쬦쒧༨\udf81壁䡲媎坘耇Ѐ^ᾇజ\u0000㉤ô昇钰س憉쁪Ǩ戅쥰ዕᡊؠ₇ꤰ肴ꔅᡆ嚠᪗匜Ǩ禇鰾₲䅃ⅸĔᒧ⒔戴梥炑捗댙᜵朰八僑⓲輝ኯ㼷佫똁㲦퍖ؘൢ⎱໱땇畑碴꒺儐猁倎蒐ゅ․Ꞡ䦇せذ儓멥璑ፐ獙Ⴕ᜴児ƌ鎳貜ᕏ捱띡셌퀕漌찍汢᳽佯㞰眃똜᝴\ud8e5拍Ⳳ첬곺쾘侃贘ஊ뢐޿䟶罂x郦磄ո磦ꋸ각҄܄졎蓘侄䒯슎⢬䧄뱋Ꝃ䱧ቋၶ䨬ꓺ䱠䙎撮դ峟ଡ଼諊곊Ƭ뫎ま䥄ฃᴍ䃠庠쎦溤ಬ֔鄀咥䢀問咛螔䨞膀嘇㒼⒠㰁㓖戆㐻䦀㚤뒜ꎓ洴ꀝ䂀墊ŭ㉫Ⱨ瓢琢ꪱ⋊䌢铤㝘黶裂뚅㣣蔌躖᲋ҏ▰㑊˒襪ᔨ⻪നꋭ⨌ꀡ鍰ĩ䘇퓦鞠麀⥄⏀ゆᣣ䘊덍驳晒⤐樃쁸\udf83颫鑘텇匰䍘욋昴⤐Ḅꍉ艨岢ࡂ蜨⚁ࠥǵ犸Ꟊ暔鰰蜩嘆鱂鏶橓ลƜ皕᭢⃢ｕ⒂ດﱽⵈ뺗䢩戙匯糳Ⲳ豎늰ֲ腀冇⊭Ⳕ皠㉬郍圭띬죊흽뉷答턾켻櫲뭘ᆻ㓏ᲇ넷⏂倒튋䗎财췰\udcaaࡼ갪⪕ꍴ鰔눅꼒▩媵꿴\udac0\ud98e轸䵊閈ұ蓔൦怎腰ᄅ鐨Ű伃聍儮ㅃప듔斪聑蝖䔥遦Ш౨\udaaa뚒\ud92eᱶۓ⭰堓远쏌ࠓ쮸聋채毌⑛차ྈ粧쯸聊Ґ䷈ﳬ훼얍ﲭ䟼馬豔⦠籏Ꜣ䩧前䊪䦤멈撦䥤렃撐⽺鲫쪂귌⊩⪲꿂Ꞇ۟蔆뉯۞ꎦ밀⮢넔抚๢멓㓑茀ࢆ 闟ፍų临⚵월訢競ꫂੴ꜆䑐倨⒆瘤္⍅㐋䊴ᭃ됇䉴ࠁ瑲꤀⤁逯띷䴅퀃Ȱ匀뀛ް✆ೃ兗䶳沈쳗㶵\u0018덑ọ흜炯ǉ꼇긜ꂴ漵ឺꇋ屗눦参峃䄴㍄둫䖴筄瑧䕴汴ۯ䋠뽅쀐郁!唘櫩甃䄔␂鋼蒠ⴁ⸝萈䬀聳䅰㔀灂艐♍‰芴猁ꡒڰ岡꯰忯ぜ윁ꁷ〗ߐ㰰灘菰刀娞Ҙ切㐪萨俯㐑Ԡ柇\ud81eĈ紇\ud812᧠ᜁ⇜ꕈႅ‥ց耝⇔聰ā臎斡邂ꠈہﴂꠜˠᴄ頞ˠᄂ퀞ϰ峀ิ稇⡇䐨刁ᆈ׾脀婐᠐ゃ倻̈瘞츫䐨Ⱍơ풁ၶᯨ峅䠦菡鈝끺Ұ䝇 ܠᴃˠ₂쇫Ϩ㺅蠄׌爄ﺾ茈Ḇ끳䜱震々ꄡĈą놇ְ樅ﺪ薰唝⁖α脂倸鶰碛끜썐娄ᇯ᱋撙뻒쳇⸄遨蜴墄遘蜴䈙ՠ㴚ꠦ蜑\ud880婶᷊䰝⁠隰᨟〦薠⚁⇳ב긂ꡚ졚∝‎蜨刃芀⪃Ȉ㈙ࡪШ娅怪苀Ḅ끳䋠䚒꠰蛂쩔螹邁퀭Ԙ爅⁂蔬ꪃ蝲ܠ鸁偳䒘㰁瀝ְ紁䐦蔁ꂀ찉᪑뼇㑤౅즃慳䒐漛秽߹쬬ܰ䑟\ud850娈纙偔聚犂ﺁؑ脄⠼ܠ玜ꀐ葋᠇ꁴ崅톅䖌槨勍ꀬÊ┅䖫顀䁝ꁇ梄⠚ᶅ졞禼֤鄄ꁦҕ챑苠汝᠌宭繙瀂쇠㎜遑腐㴥闉ɥ슔ꀌ泟㙟ﰗƪ㰄끽蛹邂倈塥ꡏṉ풂䁈妾욑큽蒅Ꞃ桵夐᪁쀕֠┄薑Z汛ᗢ墉骄⡂蝕즃蝳䏠│\ud9beƨ⶞橔藎峃觔鮱풅끲嶰ງ懎ᴠ⚅뀚莱뺀찐臠戞뀔᫦儘懸蚹躅헽↬ꪇ퀰骡鱎↦蕈ࠄ쇑蚝赛䦨᷾툀솰Ạ唙ꆋᢀ⦟ぼ鼴紅끏ⳅꁒ\udc28实恤驐殁瀧肈邆ࣤ鹵恀嫹貦㧚ƨᄅ챺ñ쫪桪ذ㺃㦜겘紅恿ʨ䉅疈婨墡倪莀紀聽脂␹䎄㡢㷺崠ẇ⠿Ȉ秆趤Ԙਚ퀘塀犄敃驐㭙ဘ鶅訽찈̀缛᯽ꂖ橒ƨ䨙ꆧ薬옚倚ᶈ粛䆌우ᄃᆈᴭဎ聭뒲擨胁욇ꁔ虚낄ꗫ駀坚ᗇ鹭鞛福髹龛麟䗅쇛쀚蓍쮟䖫岱덜ꀠ宀兛蜟᫐䓚䀞ޠ㺁쀘䖈匄ৣŴ紇覅ꐙ묞즩驸Ც桨藑邇てᷠ姚蕠⠘᠐樂藌筅ꁽ╵ꠂ嫓뺃鬑蜅ꁙ\uda68䠺臄颰鲜淪Ǡ܄试ῐ䊾끂菃⚄ⰵѡ宅簤©鼛෰葕ꀄ\udff9넙ꠁḒ䀇ԅ鴁瀞ౠ紁햫庈甘耻鴅⡋ܻ震䎵̻쎢塚❇⡚喥㼂偉Ǡ峦ᐳ鹠娽ꁉϝ鴁ᗗ忌㼆㑶㳣ꪻᤖ꥙ࠠ痾鴀联腰▟ᯐ\udf61蒼쇂胝馨鼱ꆽ귝팑긇衋Ėﴄ薠虁\udc3b륖䊁௛ݎ点ᇎ봘嬅膼ず➅覤벬殦䶈峇ↂ뵑짧왓薠짒뼫ꔄꮤ뱤葺膴맭ᮆ\udc8b솿訚䧑먩\ud99d恱硙ꀿ啟嗍夬꿨娨\udda0㡲栐봃\udf98ᆾڃ\ud83b痽ۃ䏔㽃탺쏠⇀尿챏鰣篭π震⡻壌㼂ꠠ蓙삾お鹠ゝⶅꐩ腄뇐ἰງᇽ͉ꌞ뛱뮁ꠙ궚ᴠ㒚消酴橽蠭Ǐ洞䷒܋\udde2ﺠ␘▤ᶈᇸ婬넾끳ߘ招觱綟鋻ﻖ޴ᄆत㬑뎙֮Шᰃ蔠礦衾ﲅ劣冁٭豾薔鵁뇉聡셺馪薡赘䟐曞记薈Ⰰࠒ삖ˀᣭꈊ\ud970ఠ∀춷\udcae混⿩ዌᙛ麭빦쭛ļ퓎릭斛涫㹙嫀냪똴㩬렉魽˄ઌ䵷㐓䄔삀ਸ\udec3Υ茭臥ꈢ쬀쭆֨ബ潋娂홃Ⱒϓ딬렋䭣墹쟆젵蠹㕆ଐ⪃髜끴땠⼂㠗ᬄ\ud8a2ៈ傖力膰恧ກࠣꁿ㈇ꐬ\ude63୘⇞췶河ꁍ䀺܀撚⠴ᛷ늍蝭Ⅱ⃨฀贠괹షݏ搛㚜훡޹떭奦ဝ\ud992윪圴쁉鲙晧侙䫝㻘뙹鈌숍샼鯲욠윰춪慘Π私峂−㙛뤄鹬逫竨⯦퀁吱꿃ႂ䫉ٞ౩㚁Š춖ࠏ㐹ǝಡЊ\u001a࿐Ǭ䈍伎臽퉖㭰᱄ۛ孻騄媱Ɂ遀㳧荚ɘᛀ욁䎢쳊蕳清瀩嘞螽᳢ଔ墤㘈Ｐ\udc95椫ሆ陑땈⹡㕣塽壘홮ᑶ聽썘᯳檙陙ৈ挨ﰃ耚胰ᯁ摆䷨ѿ珺受㠘铽㜡餥큮企\uddaa尗決볁盅眡鐌㟢肝郎\udbc6ߵ툼䀠ܐ乺쐉䁽뚓꘽ᨉ夬䚒❶혆䮉ఒ㠛ᛝؤ㒘Ⓛ戂̘ƾᢲﺅ㳹減獙\uded7愞ॄ㼭ሙ﭂舻썖専ވ㳁밦!ذ屬꣧悈鯂\uda46䐱耊‐෣卆噡Ҙߍࠖ肃壨˦∱垲䃼˻じ렐᛺̠椂㍥鬾ŀ༶䠄ⶡ䀘澠攸㠒뚪㝁ꑍ뾥찥㥗쌆谳鞞ü洐〘ᕓᆅͥꝀ蝣聁Քᘠ萳ᆣಁᓐҹ䃐ꃁ□ꥭᨕꌮ𨁁섡妿೐敯䩸ᣀ㒘ኁ佮筚ͼ⻡쪴⠎聄潨캂먤䛋猯ꬁࠝ邴竕\udb6e膍蠄r䡷߳ᷔ؉ࡁ䘇ิ㦊Ԑ혏퀏䅐稃㚖살p㦠ⰂⰜ櫘ৠᶍ䠖ğᾰ㞇〗・Ϩ☸㜁ﮠ\udd86붶\udbae瀖衐嫙俗㠐ㄟ걌狯팑㨌솶拰ꆵŢ֜挂ᘾ≅낍篤㽑릁⪀䵢܀境嘢­끭錜聠錶쒲ꋤ鞫챿굠秛鋕盨뢌铠\udb61䑴દ⢂љᐋ␁瀋G뀀喀쉣̇ʶ톾忶洓䇆爙㗏䚲꘍≯㼗텦穏㐹䄁䶳ⴁᳲ댕끢࿪˜섀삈푁鲔݀輚\ud80f짌҅붠砌쀖蓄〖욾쀕ᚋẇᐶ離ㄥ迂᛭ザڀ펡㰊䊑ႁ䠲䛪덹赃\udd6a惲ت\udc80紅౔귲ᷨ\uda59\ud9cb쇤㕸䆝舩୩ᡥᜰ⺳ࠢꎈᥔ묺틔۷뜡隭䅤ࠞ؜㚁ʳ汤跈椫̹绒庱Ī걁⬬쒤͘ᕁ課ﺪ週ꄋ墀ᘑ䡀┃甕䒿ּ⧠攊⠬的ȥ䁞觛딓隂샒쯨ⓑ䘊㼀㈣ꂬ驙졪ᬚ᭄ღ䃡⍷䎻䉻胏皘㖰\r睍㬞䓔ᥞ繌ꮈ臢ൠ斨꣋ᇣ矐」가靯凞\udfb1铌覎⊊㬂擒鹨춷놁隫聘ﯡ섾厅᠌≓塛䣈₱๹뱃\ude69ƞ잀⭊튔ك⸂蒆屛燛黝쭀眣뢸Ӯ뮥\uddae뮸㷍퇏畻믜澥뮘࿮唀ލ䇎騏䮧ⴚ膶ڈ㝽ᓧ茰ᨦ㸢쾎籰̘䎺។胈㗎⢜✤᪤팆ቶ䦖溣篸ਜ빋䞁臭耘倾肁㌜츴⠘䂴潧䕛㋝뙈獷ꏬ됏栵ꑓ鼠㐳ţ춆᠈逝颴뚵₥縺∬Ẃ藀䀖恶࿞⊋溋첟쎮倡䄰쎐倠᭥沸搵쮶㯣砰èᡡ䏍⁙ά萀ු瑽웝署睏呷䔠㤜灂꠼zဈ袁戇楼଺㬘蠅샬㖠㏳᫧\ud894ᤣ∦ဲ䦗궟邴ܘ⛃゚䬁ꍂ樂轧ﮓ㧾諴鞄췔攋⯸ᣎ縋袼籃䍈㬖잀檈굈А挃逛ր듥鈍谝ၓ譄ʎ조㎪䀠攋矛Ⴤ금ѓ黩刄艳ᬡ䌲砕ᡂೀງ鐇䂩΀⩀摡큣ϐẶ넂砅䴬ཛ羚ꘆꃤ菝관ꨉ獍ᮀ⹁謲偢`ॠめ‸失䚸Ž☌Ḙʇ鰼㿂ᰮ恈⢞廋轅㰉鍏⵸㏂㤶Ȅ᎖ഔ꽮揊\udb11恐ҥ跨蜎칐ē阌킰䖎㨡ⶀ퀷ᐁ濌礛語䗼ﬁ쥊㑚芍⠂ᐊ릑⯥‵㴦옑퉱艌ﱀ䥨庢㒖꒽◜팼蹋銰\u0014날萂⊽톉褒\uda94㒹ꖙ⧦뭐ㅁ䰮鑎駄䌭뤩䮄艎ल䤐ᖒ㲑펥䑅犻譢췌횸ᑳꩉ縡첣툋⤃ዊ噗␘ௌᒐ䠂栄Ʋ䘀墪픟₵퓞猁ȃ벦閺绠僉ꎰ簒Ⰻ樆藌\u0000紦´䡔䊠큝흛ཱུ枞긝뉶娲읣Ằ⋢쇉힃앭囱䋴鐔쫎伲眩τᶂ墁Ԕ⓰﬋糉菟❀㬅祡\ud9a6쌬妰䦈횀뫋ꠑ橳嫢뜓㲅‭搁୙ఢힼ궱ἡ詧쥋䷲ᾒ蒼듡⢭䑋⭂媨鞤⊑햢\udcad桁场쀼젼Ԁ戂쀔Ⴡ㄀滍騛櫦Ĉ䨄퐖Ʃ괩抃〇怫ប莪吘⍩舠⪓钢ꕽꟲ菻〆䨫ዘ륁░쀰8ࠠ纵\u001cҎ䊃鈗䩴䄘㝠脂넲ၗ堥脃缰ꆈఈϺ鲋ᑽ얍杲囹㈭ᄒﷇ頯⩆ɳ䲁흋礟⫷୵緎\udd00而댄煺⨮ꢙ㜗♖積哌롙᥀ዦ풠Āడ瀿禓袁ᗰ튕˨ᇀ㛸뀢萜ट鼂柢ₙ顰䜀ⴁ銚傝⟮ᣫ쯌兢뷅㎩켏謞쨚悫㵍腉䢪뉖亮ᤒ\udfe5ㅟ牢\u0001 夔ɕ揆膰噗ꪢ?䐒㣓텔Ɩ䡈　꺼엔풱塸⏈耣Ꮴ᳅瀅挋Ӱᦁ驟´ፀȁ#\u0012悬ܚ倃ࡕຆ荀\u0018霰가瀿ﱷ舀෤䀍蒢蕬⁀䓆⡨榮뱴丬︣ҬӢ쨐ᠩ쑾룈뇌䛂襦넄ᶲཆ裱ഡ䶊冇ᙲ唄뒠ӆᢾ儷੤棰ﰃ삮釬จ㻆눷鐻肄ꩪ\ud80e샶Ѱᎃ䆒⫽ࠐ罈ŷ苴뿠肂℘℡ഈ塂ူ慄㨡胎␉䃀⬑␖鑜譈䐵쀉遴╤㬡㤇隸䊲੼鉯ᐅ㖥ࡰⱪ斱備ݮ⪡쒍ꡓ솪씨獃ᰓ鬿芦李඾湀ᵑ꘤쉋༌ⵙ鑨⨼弶甄涧蝫ӡ쨁든藍㠃獒閚蚀伴ԇ촳ᙎ㾛瘁\u0003艞萭㿧ୣ선\udd16퉰ȃ렉檄డ⟊隑健꘭碁쭋Ⴊ퓥䊶㰘궥楤㓀⫞\udc2a뛲ڭ끣ꭄꂥё⚵쨆ⵊ蝫媡縅훼耑̈촧怶\udb02ஶﶴ옟⧛縅촑閞帒鍗҈᪦˄᠂ထ඄ܸᯀ镣聉愷⪀蚫\ud94e듄۪轔붥ò雄脰⚕䨊꤀╘ߐ牋鉐⫔ڪப휌䁺ꁢ虚㐔퐜臉 㽲䭫벒肗⒥ǉ⮮衊嚡摚〔帎䥢띢䜸ᒕ쮳ꀮ뉈ቦꤙ▫굑槚뿕亩畐묊®ꞁ窧할聗缚䜨픔钨䄆쒏䃥₞飯ㅚ怿ޔ鴫顊硱쇠៊긤䮜\udb30㶶⥟단熸軀퀎꘲歃奭ጃ砋᫼ڥ䊔쀃聤ɰ⋋堶郻ڂ❭築衐㨵첢鵾椒Ⱊ칓␋鞬듰腖舻吝蘾썃垸鴝螯睐ꀆ聙͵ᖽ杯饕䭎坂玕겾籫裡뺉䥊銂ᔄꣳ⛞荃⼫櫝毊ㆡ⥊ъᱼ䃅ư戶쀃꓿ꧦ괻귒ں될䗀㜩逡}裲죷䩒䃲釨⚡猈䆪᾽桡袚ᦵ┉⚳㪴ꀑ३裖졺喠Ҵ毨⤄壀̀ጡ턞菛…ጆ➌쉘뀸韵⬇䀻㧥씱斶ṟ磰䏫⎰嫊偨䈠\u001a脃᥇䬦哜䦁ꡦ波愃༪撌嚒༮೭ꇣ>▦တ䡲┫칎ୋ뉛銉钠ࢥ堡戱䀜㵎꜏뒥쎅⠺⒇爏䄑Ȣ፥ꗫꔺ搞孡꿣\ud86a鶢꧰尿쐏།ḃ괮烾䪒㮸䂏Ѵ⏘饑䛅┴D꘣ᴂ䜈ے쒎ᒧꖰ湈콺⨰۪跸箥봪刮䁲チ᠂沧ꃔݠ㸐炍ᆇ⤴瑥弇ᥦ䟼㻡욍쑠ചᵨ쁇ᗋ醞迤ἰ볌璟텊㈱\ud98c뗀濼ꦋ਀榼ƣ鸙\ud8d9㈆푩ᱤࠧẉ㙆阽퇍雱븺핃\udb49䛬㹑讌⑵ꍵᢓ℀츺醌陔斣錛棬ᬁ㣱ꂏ㱿₍利ㄐ퀬㇘輜닽奫冁\udf64༠葨ጡ䂯√甅乭鑻갊廯湡헊푂᨝ᯕ㥇ऊ倚⊙ࣥ쓣䓎‱㳤▗뤓젻銕⟘랓髌̍䈨虒梁ꀒ蒔ᒣℎ࠙䋊๐呠ᎄ浝敀ꨐ\ud9aa蓲놫開⊕惪ⴧㄴ뉁ꎸ联捅蠄킦茴ẁ촖₋䚭櫐\ud829늵啂킕클⬊菣슬㊈꣬鑥饛犝嘲邢Ჽ碙䄱捁캯ᢍ傍ஸ㥟ꦚ乩亓匮検䧎抴婤魮湴␅\udad7阨឵篎怒ӱ邌걪侮гᜇ职觯趤矣ᤈʈ܂樈ꐵ͵灴豤玥긘ꢻ㓰ọ猝⚄ꐹ᷈ద孹蘶蠴綁괘ꁐ˜耀";
+            window.__GITBOOK_INITIAL_RENDER__ = true;
+            window.__GITBOOK_LAZY_MODULES__ = [];
+        </script>
+        
+                
+    </body>
+</html>
